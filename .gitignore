@@ -3,3 +3,4 @@
 /workbench
 .env
 composer.lock
+/.idea
