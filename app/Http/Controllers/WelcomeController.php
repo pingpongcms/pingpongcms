@@ -33,7 +33,7 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{		
-		dd(Theme::all());
+		return theme('index');
 	}
 
 }
