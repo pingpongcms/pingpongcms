@@ -145,6 +145,8 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		'Pingpong\Modules\ModulesServiceProvider',
+
 	],
 
 	/*
@@ -193,6 +195,8 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 
+		'Module'    => 'Pingpong\Modules\Facades\Module',
+		
 	],
 
 ];
