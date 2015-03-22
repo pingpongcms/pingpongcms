@@ -9,9 +9,9 @@
   <title>Pingpong Labs - About Us</title>
 
   <!-- Bootstrap -->
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/all.css" rel="stylesheet">
+  <link href="/themes/default/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/themes/default/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/themes/default/assets/css/all.css" rel="stylesheet">
 
   <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300|Pacifico' rel='stylesheet' type='text/css'>
@@ -211,8 +211,8 @@
             <!-- end footer -->
 
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="/themes/default/assets/jquery/dist/jquery.min.js"></script>
             <!-- Include all compiled plugins (below), or include individual files as needed -->
-            <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="/themes/default/assets/bootstrap/dist/js/bootstrap.min.js"></script>
           </body>
           </html>
