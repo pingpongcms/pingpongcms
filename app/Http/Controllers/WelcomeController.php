@@ -1,5 +1,8 @@
 <?php namespace App\Http\Controllers;
 
+use Pingpong\Themes\Finder;
+use Theme;
+
 class WelcomeController extends Controller {
 
 	/*
@@ -20,7 +23,7 @@ class WelcomeController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('guest');
+		// $this->middleware('guest');
 	}
 
 	/**
@@ -29,8 +32,8 @@ class WelcomeController extends Controller {
 	 * @return Response
 	 */
 	public function index()
-	{
-		return view('welcome');
+	{		
+		dd(Theme::all());
 	}
 
 }

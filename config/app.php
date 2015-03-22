@@ -146,6 +146,7 @@ return [
 		'App\Providers\RouteServiceProvider',
 
 		'Laracasts\Generators\GeneratorsServiceProvider',
+		'Pingpong\Themes\ThemesServiceProvider',
 
 	],
 
@@ -195,6 +196,7 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 		
+		'Theme'     => 'Pingpong\Themes\ThemeFacade',
 	],
 
 ];
