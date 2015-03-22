@@ -1,0 +1,116 @@
+.section-space {
+	margin-bottom: 30px;
+	display: block;
+	height: 1px;
+}
+
+.content-space {
+	margin-bottom: 5px;
+	display: block;
+	height: 1px;
+}
+
+.section-content {
+	color: #FFF;
+}
+
+.section-content .row {
+	margin-bottom: 20px;
+}
+
+.icon {  
+	color: #FFF;
+	border-radius: 100%;
+	padding: 25px 20px;
+	width: 120px;
+	text-align: center;
+	margin: 0 auto;
+	height: 120px;
+}
+
+.body {
+	text-align: center;
+}
+
+/* FOOTER */
+footer {
+	color: #FFF;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+footer a {
+	color: #668DB3;
+}
+
+footer a:hover,
+footer a:focus {
+	color: #FFF;
+}
+
+#about p {
+	font-size: 16px;
+	line-height: 2;
+}
+
+#about .link {
+	margin-top: 20px;
+}
+
+.awesome-title {
+	margin-bottom: 30px;
+	text-align: center;
+	color: #FFF;
+}
+
+.awesome-title::after {
+	content: "";
+	position: relative;
+	width: 15%;
+	height: 1px;
+	background: #FFF;
+	margin: 10px auto;
+	display: block;
+}
+
+.header {
+	height: 200px;
+	margin-top: -20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.header-body {
+	position: relative;
+	top: 55px;
+}
+
+.header-overlay {
+	background: #333;
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	opacity: .5;
+}
+
+.content .icon {
+	margin-top: 30px;
+}
+
+.bg-white.findus {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  color: #333;
+}
+
+.bg-white.findus h3 {
+  color: #333;
+}
+
+.bg-white.findus h3::after {
+	background: #333;
+	width: 12%;
+}

@@ -1,0 +1,73 @@
+.navbar-transparent {
+	background: transparent;
+	border: 0;
+}
+.navbar-default {
+  padding: 5px 0;
+}
+.navbar-default .navbar-brand {
+  color: #EEE;
+  font-family: 'Pacifico', cursive, Sans-serif;
+  font-weight: 400;
+}
+.navbar-default .navbar-brand > span {
+  color: #e74c3c;
+}
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:focus {
+  color: #FFF;
+  background-color: transparent;
+}
+.navbar-transparent .navbar-text {
+  color: #777;
+}
+.navbar-transparent .navbar-nav > li > a {
+  color: #AAA;
+}
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:focus {
+  color: #FFF;
+  background-color: transparent;
+}
+.navbar-transparent .navbar-nav > .active > a,
+.navbar-transparent .navbar-nav > .active > a:hover,
+.navbar-transparent .navbar-nav > .active > a:focus {
+  color: #FFF;
+  font-weight: bold;
+  background: transparent;
+}
+.navbar-transparent .navbar-nav > .disabled > a,
+.navbar-transparent .navbar-nav > .disabled > a:hover,
+.navbar-transparent .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-transparent .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-transparent .navbar-toggle:hover,
+.navbar-transparent .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-transparent .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-transparent .navbar-collapse,
+.navbar-transparent .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+/* SCROLLED */
+.navbar-scrolled, .navbar-white{
+  background: #FFF;
+}
+.navbar-scrolled .navbar-brand,
+.navbar-white .navbar-brand {
+  color: #333;
+}

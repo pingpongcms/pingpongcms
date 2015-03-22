@@ -1,0 +1,23 @@
+.blog #tags a {
+	text-decoration: none;
+}
+
+.blog .media-info {
+	margin-top: 5px;
+}
+
+.blog .post-header {
+	color: #FFF;
+}
+
+.blog .awesome-title.post-title {
+	text-align: left;
+}
+
+.blog .awesome-title.post-title::after {
+	display: none;
+}
+
+.blog .post-info a {
+	color: #CCC;
+}

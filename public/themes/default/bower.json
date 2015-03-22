@@ -1,0 +1,22 @@
+{
+  "name": "pingpong-labs/website-theme",
+  "version": "0.0.0",
+  "authors": [
+    "Gravitano <gravitano16@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0",
+    "jquery": "~2.1.3",
+    "isotope": "~2.1.1",
+    "validationEngine": "~2.6.4"
+  }
+}
