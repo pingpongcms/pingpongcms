@@ -1,0 +1,14 @@
+{
+  "name": "validationEngine",
+  "homepage": "https://github.com/posabsolute/jQuery-Validation-Engine",
+  "version": "2.6.4",
+  "_release": "2.6.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.6.4",
+    "commit": "499f5679b6fbd245fce1cbe610c5f80267c547af"
+  },
+  "_source": "git://github.com/posabsolute/jQuery-Validation-Engine.git",
+  "_target": "~2.6.4",
+  "_originalSource": "validationEngine"
+}
