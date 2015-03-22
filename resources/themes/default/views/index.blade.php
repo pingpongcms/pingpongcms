@@ -1,4 +1,4 @@
-@extends('default::layouts.homepage')
+@extends('default::layouts.master')
 
 @section('content')
 	
