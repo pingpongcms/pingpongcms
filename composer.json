@@ -8,7 +8,8 @@
 		"laravel/framework": "5.0.*",
 		"laracasts/generators": "~1",
 		"laracasts/testdummy": "~2.1",
-		"illuminate/workbench": "5.0.*@dev"
+		"illuminate/workbench": "5.0.*@dev",
+		"pingpong/sky": "2.0.*@dev"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
