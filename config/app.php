@@ -148,7 +148,7 @@ return [
 		'Laracasts\Generators\GeneratorsServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Pingpong\Themes\ThemesServiceProvider',
-		'Pingpong\Generators\GeneratorServiceProvider',
+		'Pingpong\Generators\GeneratorsServiceProvider',
 
 	],
 
