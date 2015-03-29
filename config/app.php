@@ -149,6 +149,7 @@ return [
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Pingpong\Themes\ThemesServiceProvider',
 		'Pingpong\Generators\GeneratorsServiceProvider',
+	    'Collective\Html\HtmlServiceProvider',
 
 	],
 
@@ -199,6 +200,8 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
 		
 		'Theme'     => 'Pingpong\Themes\ThemeFacade',
+		'Form' => 'Collective\Html\FormFacade',
+		'Html' => 'Collective\Html\HtmlFacade',
 	],
 
 ];
