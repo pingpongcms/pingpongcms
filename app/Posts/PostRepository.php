@@ -18,12 +18,19 @@ class PostRepository {
 
 	public function getLatestPaginated($type = null, $perPage = 10)
 	{
-		if ($type) 
-		{
-			return Post::type($type)->latest()->paginate($perPage);
-		}
+		switch ($type) {
+			case 'published':
+				return Post::published()->paginate($perPage);
+				break;
 
-		return $this->getPosts($perPage);
+			case null:
+				return $this->getPosts($perPage);
+				break;
+			
+			default:
+				return Post::type($type)->latest()->paginate($perPage);
+				break;
+		}
 	}
 
 }

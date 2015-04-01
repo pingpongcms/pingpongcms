@@ -28,5 +28,10 @@ class Post extends Model {
 	{
 		return $query->whereType($type);
 	}
+
+	public function scopePublished($query)
+	{
+		return $query->whereNotNull('published_at');
+	}
 	
 }
