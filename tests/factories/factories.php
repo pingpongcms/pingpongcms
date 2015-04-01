@@ -21,6 +21,7 @@ $factory('App\Tag', [
 
 $factory('App\Post', [
 	'user_id' => 'factory:App\User',
+    'type' => $faker->randomKey(['post', 'page']),
     'title' => $faker->sentence,
     'slug' => $faker->slug,
     'body' => $faker->paragraphs

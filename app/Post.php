@@ -7,6 +7,7 @@ class Post extends Model {
 
 	protected $fillable = [
 		'user_id',
+		'type',
 		'title',
 		'slug',
 		'body',
@@ -21,6 +22,11 @@ class Post extends Model {
 	public function user()
 	{
 		return $this->belongsTo(User::class);
+	}
+
+	public function scopeType($query, $type)
+	{
+		return $query->whereType($type);
 	}
 	
 }

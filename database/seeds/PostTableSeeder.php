@@ -8,7 +8,9 @@ class PostTableSeeder extends Seeder {
 
     public function run()
     {
-        TestDummy::times(30)->create('App\Post');
+        TestDummy::times(10)->create('App\Post', ['type' => 'post']);
+
+        TestDummy::times(10)->create('App\Post', ['type' => 'page']);
     }
 
 }

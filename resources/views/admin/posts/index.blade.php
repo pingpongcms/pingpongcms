@@ -3,7 +3,11 @@
 @section('content')
   <div class="panel panel-default">
 	<div class="panel-heading">
-		All Posts
+		<div>
+			All
+			<a href="{!! route('admin.posts.index') !!}">Posts</a>
+			<a href="{!! route('admin.posts.index', ['type' => 'page']) !!}">Pages</a>
+		</div>
 		<div class="panel-nav pull-right" style="margin-top: -7px;">
 			<a href="{!! route('admin.posts.create') !!}" class="btn btn-default">Add New</a>
 		</div>

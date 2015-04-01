@@ -1,12 +1,12 @@
 <?php namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
-use Illuminate\Http\Request;
-use App\Post;
+use App\Http\Requests;
 use App\Http\Requests\Admin\Posts\CreatePostRequest;
 use App\Http\Requests\Admin\Posts\UpdatePostRequest;
+use App\Post;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class PostsController extends Controller {
 
@@ -23,6 +23,11 @@ class PostsController extends Controller {
 	public function index()
 	{
 		$posts = Post::latest()->paginate(20);
+
+		if ($type = Input::get('type')) 
+		{
+			$posts = Post::type($type)->latest()->paginate(20);
+		}
 
 		$no = $posts->firstItem();
 
