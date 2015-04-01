@@ -4,9 +4,7 @@
   <div class="panel panel-default">
 	<div class="panel-heading">
 		<div>
-			All
-			<a href="{!! route('admin.posts.index') !!}">Posts</a>
-			<a href="{!! route('admin.posts.index', ['type' => 'page']) !!}">Pages</a>
+			All {{ ucwords(str_plural(Input::get('type', 'post'))) }}
 		</div>
 		<div class="panel-nav pull-right" style="margin-top: -27px;">
 			<a href="{!! route('admin.posts.create') !!}" class="btn btn-default">Add New</a>
