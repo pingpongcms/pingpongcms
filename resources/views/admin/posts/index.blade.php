@@ -8,7 +8,7 @@
 			<a href="{!! route('admin.posts.index') !!}">Posts</a>
 			<a href="{!! route('admin.posts.index', ['type' => 'page']) !!}">Pages</a>
 		</div>
-		<div class="panel-nav pull-right" style="margin-top: -7px;">
+		<div class="panel-nav pull-right" style="margin-top: -27px;">
 			<a href="{!! route('admin.posts.create') !!}" class="btn btn-default">Add New</a>
 		</div>
 	</div>
