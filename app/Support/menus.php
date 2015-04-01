@@ -6,6 +6,22 @@ Menu::create('admin.left', function ($menu)
 	$menu->dropdown('Posts', function ($sub)
 	{
 		$sub->route('admin.posts.index', 'All Posts');
+		$sub->route('admin.posts.create', 'Add New');
+	});
+	$menu->dropdown('Pages', function ($sub)
+	{
+		$sub->route('admin.posts.index', 'All Pages', ['type' => 'page']);
+		$sub->route('admin.posts.create', 'Add New', ['type' => 'page']);
+	});
+	$menu->dropdown('Categories', function ($sub)
+	{
+		$sub->route('admin.categories.index', 'All Categories');
+		$sub->route('admin.categories.create', 'Add New');
+	});
+	$menu->dropdown('Tags', function ($sub)
+	{
+		$sub->route('admin.tags.index', 'All Tags');
+		$sub->route('admin.tags.create', 'Add New');
 	});
 });
 
