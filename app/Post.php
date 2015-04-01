@@ -1,5 +1,6 @@
 <?php namespace App;
 
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model {
@@ -17,4 +18,9 @@ class Post extends Model {
 		'published_at'
 	];
 
+	public function user()
+	{
+		return $this->belongsTo(User::class);
+	}
+	
 }
