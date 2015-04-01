@@ -5,29 +5,20 @@ use App\Http\Requests;
 use App\Http\Requests\Admin\Posts\CreatePostRequest;
 use App\Http\Requests\Admin\Posts\UpdatePostRequest;
 use App\Post;
+use App\Posts\PostRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 class PostsController extends Controller {
-
-	public function __construct()
-	{
-		//
-	}
 
 	/**
 	 * Display a listing of the resource.
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index(PostRepository $repository)
 	{
-		$posts = Post::latest()->paginate(20);
-
-		if ($type = Input::get('type')) 
-		{
-			$posts = Post::type($type)->latest()->paginate(20);
-		}
+		$posts = $repository->getLatestPaginated(Input::get('type'));
 
 		$no = $posts->firstItem();
 
