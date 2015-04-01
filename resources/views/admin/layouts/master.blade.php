@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Laravel</title>
-
+		@yield('head')
 		<!-- Bootstrap CSS -->
 		<link href="{!! asset('components/bootstrap/dist/css/bootstrap.min.css') !!}" rel="stylesheet">
 
@@ -19,6 +19,7 @@
 		<style type="text/css">
 			body {padding-top: 60px};
 		</style>
+		@yield('style')
 	</head>
 	<body>
 		@include('admin.layouts.partials.nav')
@@ -31,5 +32,6 @@
 		<script src="{!! asset('components/jquery/dist/jquery.min.js') !!}"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="{!! asset('components/bootstrap/dist/js/bootstrap.min.js') !!}"></script>
+		@yield('script')
 	</body>
 </html>
