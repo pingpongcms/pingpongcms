@@ -4,3 +4,4 @@
 .env
 composer.lock
 /.idea
+/public/components
