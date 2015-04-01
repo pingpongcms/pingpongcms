@@ -33,7 +33,7 @@
 	<div class="form-group">
 		{!! Form::label('body', 'Body:', ['class' => 'col-md-2 control-label']) !!}
 		<div class="col-sm-9">
-			{!! Form::textarea('body', null, ['class' => 'form-control']) !!}
+			{!! Form::textarea('body', null, ['class' => 'form-control summernote-editor']) !!}
 		</div>
 	</div>
 
@@ -45,3 +45,22 @@
 	</div>
 	{!! Form::close() !!}
 </div>
+
+@section('style')
+	<link rel="stylesheet" type="text/css" href="{!! asset('components/select2/select2.css') !!}">	
+	<link rel="stylesheet" type="text/css" href="{!! asset('components/summernote/dist/summernote.css') !!}">	
+	<link rel="stylesheet" type="text/css" href="{!! asset('components/summernote/dist/summernote-bs3.css') !!}">
+@stop
+
+@section('script')
+	<script type="text/javascript" src="{!! asset('components/summernote/dist/summernote.min.js') !!}"></script>
+	<script type="text/javascript" src="{!! asset('components/select2/select2.min.js') !!}"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#tags, #categories').select2();
+			$('#body').summernote({
+				height: 300
+			});
+		});
+	</script>
+@stop
