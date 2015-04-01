@@ -10,7 +10,8 @@
 		"illuminate/workbench": "5.0.*@dev",
 		"laravelcollective/html": "~5",
 	    "doctrine/dbal": "~2.5",
-	    "pingpong/sky": "2.0.*@dev" 
+	    "pingpong/sky": "2.0.*@dev",
+		"intervention/image": "~2.1" 
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",
