@@ -11,11 +11,9 @@ Menu::create('admin.left', function ($menu) {
         $sub->route('admin.posts.create', 'Add New', [], ['inactive' => function () {
                 return URL::full() == route('admin.posts.create', ['type' => 'page']);
             }]);
-    }, [
-            'inactive' => function () {
-                return URL::full() == route('admin.posts.index', ['type' => 'page']);
-            }
-        ]);
+    }, ['inactive' => function () {
+        return URL::full() == route('admin.posts.index', ['type' => 'page']);
+    }]);
     $menu->dropdown('Pages', function ($sub) {
         $sub->route('admin.posts.index', 'All Pages', ['type' => 'page'], [
             'active' => function () {
