@@ -1,16 +1,23 @@
 <?php namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\Admin\Posts\CreatePostRequest;
 use App\Http\Requests\Admin\Posts\UpdatePostRequest;
 use App\Post;
 use App\Posts\PostRepository;
+use App\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 class PostsController extends Controller
 {
+    public function __construct()
+    {
+        view()->share('tags', Tag::lists('name', 'id'));
+        view()->share('categories', Category::lists('name', 'id'));
+    }
 
     /**
      * Display a listing of the resource.
@@ -44,6 +51,10 @@ class PostsController extends Controller
     public function store(CreatePostRequest $request)
     {
         $post = $request->user()->posts()->create($request->all());
+
+        $post->tags()->sync($request->get('tag_list'));
+
+        $post->categories()->sync($request->get('category_list'));
 
         return redirect()->route('admin.posts.index');
     }

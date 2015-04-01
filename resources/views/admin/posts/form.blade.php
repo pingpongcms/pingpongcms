@@ -36,6 +36,18 @@
 			{!! Form::textarea('body', null, ['class' => 'form-control summernote-editor']) !!}
 		</div>
 	</div>
+	<div class="form-group">
+		{!! Form::label('category_list', 'Categories:', ['class' => 'col-md-2 control-label']) !!}
+		<div class="col-sm-9">
+			{!! Form::select('category_list[]', $categories, null, ['multiple', 'data-placeholder' => 'Select category', 'data-tags' => 'true', 'class' => 'form-control categories']) !!}
+		</div>
+	</div>
+	<div class="form-group">
+		{!! Form::label('tag_list', 'Tags:', ['class' => 'col-md-2 control-label']) !!}
+		<div class="col-sm-9">
+			{!! Form::select('tag_list[]', $tags, null, ['multiple', 'data-placeholder' => 'Select tag', 'data-tags' => 'true', 'class' => 'form-control tags']) !!}
+		</div>
+	</div>
 
 	<div class="form-group">
 		<label class="col-md-2 control-label"></label>
@@ -47,7 +59,8 @@
 </div>
 
 @section('style')
-	<link rel="stylesheet" type="text/css" href="{!! asset('components/select2/select2.css') !!}">	
+	<link rel="stylesheet" type="text/css" href="{!! asset('components/select2/select2.css') !!}">
+	<link rel="stylesheet" type="text/css" href="{!! asset('components/select2/select2-bootstrap.css') !!}">
 	<link rel="stylesheet" type="text/css" href="{!! asset('components/summernote/dist/summernote.css') !!}">	
 	<link rel="stylesheet" type="text/css" href="{!! asset('components/summernote/dist/summernote-bs3.css') !!}">
 @stop
@@ -66,11 +79,11 @@
 			        ;
 			}
 
-			$('#title').on('keyup', function (e) {
+			$('#title').on('keyup, blur', function (e) {
 				$('#slug').val(convertToSlug($(this).val()));	
 			});
 
-			$('#tags, #categories').select2();
+			$('.tags, .categories').select2();
 			$('#body').summernote({
 				height: 300
 			});
