@@ -57,6 +57,19 @@
 	<script type="text/javascript" src="{!! asset('components/select2/select2.min.js') !!}"></script>
 	<script type="text/javascript">
 		$(function () {
+			function convertToSlug(Text)
+			{
+			    return Text
+			        .toLowerCase()
+			        .replace(/[^\w ]+/g,'')
+			        .replace(/ +/g,'-')
+			        ;
+			}
+
+			$('#title').on('keyup', function (e) {
+				$('#slug').val(convertToSlug($(this).val()));	
+			});
+
 			$('#tags, #categories').select2();
 			$('#body').summernote({
 				height: 300
