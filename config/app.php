@@ -149,6 +149,7 @@ return [
 		'Pingpong\Themes\ThemesServiceProvider',
 		'Pingpong\Generators\GeneratorsServiceProvider',
 	    'Collective\Html\HtmlServiceProvider',
+	    'Pingpong\Menus\MenusServiceProvider',
 
 	],
 
@@ -201,6 +202,7 @@ return [
 		'Theme'     => 'Pingpong\Themes\ThemeFacade',
 		'Form' => 'Collective\Html\FormFacade',
 		'Html' => 'Collective\Html\HtmlFacade',
+		'Menu' => 'Pingpong\Menus\MenuFacade',
 	],
 
 ];
