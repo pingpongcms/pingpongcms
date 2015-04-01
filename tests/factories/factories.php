@@ -21,7 +21,7 @@ $factory('App\Tag', [
 
 $factory('App\Post', [
 	'user_id' => 'factory:App\User',
-    'title' => $faker->title,
+    'title' => $faker->sentence,
     'slug' => $faker->slug,
     'body' => $faker->paragraphs
 ]);
