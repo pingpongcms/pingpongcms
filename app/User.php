@@ -1,10 +1,11 @@
 <?php namespace App;
 
+use App\Post;
 use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Database\Eloquent\Model;
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
@@ -29,4 +30,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		$this->attributes['password'] = bcrypt($value);
 	}
 	
+	public function posts()
+	{
+		return $this->hasMany(Post::class);
+	}
 }
