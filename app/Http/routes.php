@@ -16,17 +16,16 @@ Route::get('/', 'WelcomeController@index');
 Route::get('post/{slug}', 'PostsController@show');
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
 ]);
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function ()
-{
-	Route::get('/', [
-		'as' => 'admin.index',
-		'uses' => 'DashboardController@index'
-	]);
-	Route::resource('posts', 'PostsController');
-	Route::resource('categories', 'CategoriesController');
-	Route::resource('tags', 'TagsController');
+Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function () {
+    Route::get('/', [
+        'as' => 'admin.index',
+        'uses' => 'DashboardController@index'
+    ]);
+    Route::resource('posts', 'PostsController');
+    Route::resource('categories', 'CategoriesController');
+    Route::resource('tags', 'TagsController');
 });
