@@ -35,6 +35,10 @@ Menu::create('admin.left', function ($menu) {
         $sub->route('admin.tags.index', 'All Tags');
         $sub->route('admin.tags.create', 'Add New');
     });
+    $menu->dropdown('Users', function ($sub) {
+        $sub->route('admin.users.index', 'All Users');
+        $sub->route('admin.users.create', 'Add New');
+    });
 });
 
 Menu::create('admin.right', function ($menu) {
