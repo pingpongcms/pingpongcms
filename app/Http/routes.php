@@ -27,4 +27,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin
 		'uses' => 'DashboardController@index'
 	]);
 	Route::resource('posts', 'PostsController');
+	Route::resource('categories', 'CategoriesController');
 });
