@@ -2,6 +2,8 @@
 
 @section('content')
 
+<h2 class="page-header">Dashboard</h2>
+
 <div class="row">
 	<div class="col-md-3">	
 		<div class="panel panel-widget panel-default">
