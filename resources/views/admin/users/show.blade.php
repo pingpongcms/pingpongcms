@@ -14,21 +14,18 @@
                 <td><b>ID</b></td>
                 <td>{!! $user->id !!}</td>
             </tr>
-
 			<tr>
                 <td><b>Name</b></td>
                 <td>{!! $user->name !!}</td>
-            </tr>			<tr>
+            </tr>			
+            <tr>
                 <td><b>Username</b></td>
                 <td>{!! $user->username !!}</td>
-            </tr>			<tr>
+            </tr>			
+            <tr>
                 <td><b>Email</b></td>
                 <td>{!! $user->email !!}</td>
-            </tr>			<tr>
-                <td><b>Password</b></td>
-                <td>{!! $user->password !!}</td>
             </tr>
-
             <tr>
                 <td><b>Created At</b></td>
                 <td>{!! $user->created_at !!}</td>
