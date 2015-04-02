@@ -21,7 +21,7 @@
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
 				<form class="navbar-form navbar-left" role="search">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
+						<input type="text" name="q" class="form-control" placeholder="Search">
 					</div>
 					<button type="submit" class="btn btn-default">Search</button>
 				</form>
