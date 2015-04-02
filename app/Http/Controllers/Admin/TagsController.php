@@ -22,7 +22,7 @@ class TagsController extends Controller
      */
     public function index()
     {
-        $tags = Tag::latest()->paginate(20);
+        $tags = Tag::latest()->paginate(10);
 
         $no = $tags->firstItem();
 

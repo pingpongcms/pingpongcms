@@ -22,7 +22,7 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $categories = Category::latest()->paginate(20);
+        $categories = Category::latest()->paginate(10);
 
         $no = $categories->firstItem();
 
