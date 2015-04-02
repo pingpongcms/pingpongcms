@@ -1,6 +1,7 @@
 <?php namespace App\Http\Requests\Admin\Categories;
 
 use App\Http\Requests\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CreateCategoryRequest extends Request
 {
@@ -12,7 +13,7 @@ class CreateCategoryRequest extends Request
      */
     public function authorize()
     {
-        return true;
+        return Auth::check();
     }
 
     /**

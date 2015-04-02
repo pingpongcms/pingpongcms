@@ -1,6 +1,7 @@
 <?php namespace App\Http\Requests\Admin\Users;
 
 use App\Http\Requests\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CreateUserRequest extends Request
 {
@@ -12,7 +13,7 @@ class CreateUserRequest extends Request
      */
     public function authorize()
     {
-        return true;
+        return Auth::check();
     }
 
     /**

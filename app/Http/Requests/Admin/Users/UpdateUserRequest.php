@@ -1,6 +1,7 @@
 <?php namespace App\Http\Requests\Admin\Users;
 
 use App\Http\Requests\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UpdateUserRequest extends Request
 {
@@ -14,7 +15,7 @@ class UpdateUserRequest extends Request
      */
     public function authorize()
     {
-        return true;
+        return Auth::check();
     }
 
     /**

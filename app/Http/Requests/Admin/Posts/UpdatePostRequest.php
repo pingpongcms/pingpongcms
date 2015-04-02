@@ -1,6 +1,7 @@
 <?php namespace App\Http\Requests\Admin\Posts;
 
 use App\Http\Requests\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UpdatePostRequest extends Request
 {
@@ -12,7 +13,7 @@ class UpdatePostRequest extends Request
      */
     public function authorize()
     {
-        return true;
+        return Auth::check();
     }
 
     /**
