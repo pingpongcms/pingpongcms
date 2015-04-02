@@ -1,6 +1,7 @@
 <?php
 
 Menu::create('admin.left', function ($menu) {
+    $menu->style('navmenu');
     $menu->route('admin.index', 'Home');
     $menu->dropdown('Posts', function ($sub) {
         $sub->route('admin.posts.index', 'All Posts', [], [
