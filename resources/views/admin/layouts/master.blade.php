@@ -10,6 +10,8 @@
 		<link href="{!! asset('components/bootstrap/dist/css/bootstrap.min.css') !!}" rel="stylesheet">
 		<link href="{!! asset('components/font-awesome/css/font-awesome.min.css') !!}" rel="stylesheet">
 		<link href="{!! asset('components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css') !!}" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{!! asset('css/admin.css') !!}">
+		<link rel="stylesheet" type="text/css" href="{!! asset('css/colors.css') !!}">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,29 +20,6 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<style type="text/css">
-			body {padding-top: 60px}
-			.navmenu {
-				width: 100%;
-			}
-			@media(max-width: 767px) {
-				.navmenu {
-					position: fixed;
-					top: 0;
-					bottom: 0;
-					z-index: 1030;
-					overflow-y: auto;
-					border-radius: 0;right: auto;
-					left: 0;
-					border-width: 0 1px 0 0;
-					width: 250px;
-				}
-				.navbar-header > .navbar-brand {
-				  width: 70%;
-				  text-align: center;
-				}
-			}
-		</style>
 		@yield('style')
 	</head>
 	<body>
