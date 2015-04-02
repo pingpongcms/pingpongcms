@@ -4,9 +4,10 @@ namespace App\Support;
 
 use Pingpong\Menus\Presenters\Bootstrap\NavbarPresenter;
 
-class NavMenuPresenter extends NavbarPresenter {
+class NavMenuPresenter extends NavbarPresenter
+{
 
-	/**
+    /**
      * {@inheritdoc }
      */
     public function getOpenTagWrapper()
@@ -27,7 +28,8 @@ class NavMenuPresenter extends NavbarPresenter {
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;;
+        . PHP_EOL;
+        ;
     }
 
     /**
@@ -47,7 +49,7 @@ class NavMenuPresenter extends NavbarPresenter {
 			      	' . $this->getChildMenuItems($item) . '
 			      </ul>
 		      	</li>'
-        . PHP_EOL;;
+        . PHP_EOL;
+        ;
     }
-
 }
