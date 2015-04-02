@@ -15,6 +15,7 @@
 	@else
 	{!! Form::open(['files' => true, 'route' => 'admin.posts.store']) !!}
 	@endif
+	{!! Form::hidden('type', Input::get('type', 'post')) !!}
 	<div class="form-group">
 		{!! Form::label('title', 'Title:', ['class' => 'col-md-2 control-label']) !!}
 		<div class="col-sm-9">
