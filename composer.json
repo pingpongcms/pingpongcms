@@ -1,7 +1,7 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "pingpongcms/pingpongcms",
+	"description": "A modern CMS based on Laravel Framework.",
+	"keywords": ["framework", "laravel", "pingpongcms", "cms"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
