@@ -36,3 +36,21 @@ body {padding-top: 60px}
 	  text-align: center;
 	}
 }
+
+.navmenu-nav > li {
+  border-bottom: 1px solid #DDD;
+}
+
+.navmenu-nav > li > ul li {
+	border: none;
+}
+.navmenu-nav > li > a > .caret {
+  margin-top: 8px;
+}
+.navmenu-nav > li:last-child {
+  border-bottom: none;
+  margin-bottom: -10px;
+}
+.navmenu-default .navmenu-nav.dropdown-menu, .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu {
+	padding-bottom: 15px;
+}
