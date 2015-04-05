@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/themes/default/assets/favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>@option('site.name')</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/themes/default/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +32,8 @@
     <div class="container">
 
       <div class="blog-header">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+        <h1 class="blog-title">@option('site.name')</h1>
+        <p class="lead blog-description">@option('site.slogan')</p>
       </div>
 
       <div class="row">

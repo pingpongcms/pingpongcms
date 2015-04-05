@@ -150,6 +150,7 @@ return [
 		'Pingpong\Generators\GeneratorsServiceProvider',
 	    'Collective\Html\HtmlServiceProvider',
 	    'Pingpong\Menus\MenusServiceProvider',
+	    'Pingpong\Widget\WidgetServiceProvider',
 
 	],
 
