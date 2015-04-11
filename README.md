@@ -3,6 +3,10 @@ pingpongcms
 
 A modern CMS based on Laravel PHP Framework.
 
+## Server Requirements
+
+- PHP 5.5+
+
 ## Installation
 
 ```
