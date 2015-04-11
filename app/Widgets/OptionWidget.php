@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Support;
+namespace App\Widgets;
 
-class WidgetOptionHandler
+class OptionWidget
 {
-
     /**
      * Register widget handler for "@option".
      *

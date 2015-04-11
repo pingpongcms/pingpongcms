@@ -1,3 +1,3 @@
 <?php
 
-Widget::register('option', 'App\Support\WidgetOptionHandler');
+Widget::register('option', 'App\Widgets\OptionWidget');
