@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-use Pingpong\Themes\Finder;
+use App\Posts\PostRepository;
 use Theme;
 
 class WelcomeController extends Controller
@@ -22,9 +22,9 @@ class WelcomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(PostRepository $postRepository)
     {
-        // $this->middleware('guest');
+        $this->postRepository = $postRepository;
     }
 
     /**
@@ -34,6 +34,9 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return theme('index');
+        $posts = $this->postRepository->paginate();
+
+        return theme('index', compact('posts'));
     }
+
 }

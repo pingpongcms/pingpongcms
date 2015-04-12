@@ -20,6 +20,8 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
+Route::resource('posts', 'PostsController', ['only' => ['index', 'show']]);
+
 Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function () {
     Route::get('/', [
         'as' => 'admin.index',

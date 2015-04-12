@@ -20,6 +20,10 @@ class Post extends Model
         'published_at'
     ];
 
+    protected $appends = [
+        'url'
+    ];
+
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -44,4 +48,10 @@ class Post extends Model
     {
         return $query->whereNotNull('published_at');
     }
+
+    public function getUrlAttribute()
+    {
+        return route('posts.show', $this->slug);
+    }
+
 }

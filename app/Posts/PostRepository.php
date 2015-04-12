@@ -3,9 +3,19 @@
 namespace App\Posts;
 
 use App\Post;
+use Illuminate\Support\Facades\DB;
 
 class PostRepository
 {
+    public function all()
+    {
+        return Post::all();
+    }
+
+    public function paginate($perPage = 10)
+    {
+        return Post::published()->paginate($perPage);
+    }
 
     public function getPosts($perPage = 10)
     {
@@ -33,4 +43,14 @@ class PostRepository
                 break;
         }
     }
+
+    public function getArchiveList()
+    {
+        return Post::published()
+            ->select('posts.*', DB::raw('DATE(published_at) as published_date'))
+            ->groupBy('published_date')
+            ->orderBy('published_at', 'asc')
+            ->get();
+    }
+
 }
