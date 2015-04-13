@@ -53,5 +53,4 @@ class Post extends Model
     {
         return route('posts.show', $this->slug);
     }
-
 }

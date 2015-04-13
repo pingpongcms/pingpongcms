@@ -52,5 +52,4 @@ class PostRepository
             ->orderBy('published_at', 'asc')
             ->get();
     }
-
 }

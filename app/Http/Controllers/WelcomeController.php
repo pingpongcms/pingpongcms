@@ -38,5 +38,4 @@ class WelcomeController extends Controller
 
         return theme('index', compact('posts'));
     }
-
 }

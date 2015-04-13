@@ -24,11 +24,10 @@ if (! function_exists('option')) {
     }
 }
 
-if ( ! function_exists('a')) 
-{
+if (! function_exists('a')) {
     /**
      * Asset helper.
-     * 
+     *
      * @param  string $url
      * @return string
      */
