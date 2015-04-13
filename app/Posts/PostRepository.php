@@ -52,4 +52,10 @@ class PostRepository
             ->orderBy('published_at', 'asc')
             ->get();
     }
+
+    public function find($id)
+    {
+        return Post::whereSlug($id)->orWhere('id', $id)->firstOrFail();
+    }
+    
 }
