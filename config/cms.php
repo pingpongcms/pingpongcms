@@ -6,4 +6,5 @@ return [
 		'lifetime' => 3360
 	],
 	
+	'https' => env('HTTPS', false)
 ];

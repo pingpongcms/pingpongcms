@@ -23,3 +23,17 @@ if (! function_exists('option')) {
         }
     }
 }
+
+if ( ! function_exists('a')) 
+{
+    /**
+     * Asset helper.
+     * 
+     * @param  string $url
+     * @return string
+     */
+    function a($url)
+    {
+        return asset($url, config('cms.https', false));
+    }
+}
