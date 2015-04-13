@@ -13,8 +13,6 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('post/{slug}', 'PostsController@show');
-
 Route::controllers([
     'auth' => 'Auth\AuthController',
     'password' => 'Auth\PasswordController',
@@ -32,3 +30,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin
     Route::resource('tags', 'TagsController');
     Route::resource('users', 'UsersController');
 });
+
+Route::get('{slug}', [
+    'as' => 'post',
+    'uses' => 'PostsController@show'
+]);
