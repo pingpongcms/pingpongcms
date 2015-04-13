@@ -20,6 +20,10 @@ cd /path/to/cms
 bower install
 ```
 
+## Demo
+
+You can check the demo of current version of pingpongcms in http://demo.pingpongcms.com.
+
 ## Documentation
 
 Coming Soon
