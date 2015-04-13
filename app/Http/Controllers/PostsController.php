@@ -31,4 +31,11 @@ class PostsController extends Controller {
 		return theme('posts.show', compact('post'));
 	}
 
+    public function archive($year, $month)
+    {
+        $posts = $this->postRepository->getArchive($year, $month);
+
+        return theme('index', compact('posts'));
+    }
+
 }

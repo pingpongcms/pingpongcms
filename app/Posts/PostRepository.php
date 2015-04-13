@@ -53,6 +53,13 @@ class PostRepository
             ->get();
     }
 
+    public function getArchive($year, $month, $perPage = 10)
+    {
+        return Post::published()
+            ->whereRaw("YEAR(published_at) = '$year' and MONTH(published_at) = '$month'")
+            ->paginate($perPage);
+    }
+
     public function find($id)
     {
         return Post::whereSlug($id)->orWhere('id', $id)->firstOrFail();

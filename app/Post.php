@@ -21,7 +21,8 @@ class Post extends Model
     ];
 
     protected $appends = [
-        'url'
+        'url',
+        'archive_url',
     ];
 
     public function user()
@@ -53,4 +54,13 @@ class Post extends Model
     {
         return route('posts.show', $this->slug);
     }
+
+    public function getArchiveUrlAttribute()
+    {
+        return route('posts.archive', [
+            strtolower($this->published_at->format('Y')),
+            strtolower($this->published_at->format('m'))
+        ]);
+    }
+
 }

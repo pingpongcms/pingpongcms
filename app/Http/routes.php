@@ -19,6 +19,10 @@ Route::controllers([
 ]);
 
 Route::resource('posts', 'PostsController', ['only' => ['index', 'show']]);
+Route::get('posts/{year}/{month}', [
+    'as' => 'posts.archive',
+    'uses' => 'PostsController@archive'
+]);
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin'], function () {
     Route::get('/', [
