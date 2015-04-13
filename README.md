@@ -18,7 +18,7 @@ After the installation completed. You need to install the asset components. You 
 ```
 cd /path/to/cms
 bower install
-``
+```
 
 ## Documentation
 
