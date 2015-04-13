@@ -13,11 +13,7 @@ if (! function_exists('option')) {
     function option($key, $default = null)
     {
         try {
-            if (! app()->isLocal()) {
-                return Option::remember($key, config('cms.option.lifetime'), $default);
-            }
-
-            return Option::value($key, $default);
+            return Option::remember($key, $default);
         } catch (Exception $e) {
             return value($default);
         }
