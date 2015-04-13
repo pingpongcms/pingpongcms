@@ -6,3 +6,4 @@
 composer.lock
 /.idea
 /public/components
+Envoy.blade.php
