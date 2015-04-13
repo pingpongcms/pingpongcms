@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Cache;
 
 class Option extends Model
 {
@@ -46,9 +45,10 @@ class Option extends Model
      * @param  integer $minutes
      * @return mixed
      */
-    public static function remember($key, $minutes = 1140, $default = null)
+    public static function remember($key, $default = null)
     {
-        return Cache::remember($key, $minutes, function () use ($key, $default) {
+        return cache("option.{$key}", function () use ($key, $default)
+        {            
             return static::value($key, $default);
         });
     }
