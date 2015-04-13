@@ -35,7 +35,7 @@ class Option extends Model
      */
     public static function value($key, $default = null)
     {
-        $data = static::findByKey($key)->first();
+        $data = static::findByKey($key)->first(['value', 'id']);
 
         return ! is_null($data) ? $data->value : value($default);
     }
