@@ -12,7 +12,7 @@
 </div><!-- /.blog-post -->
 @endforeach
 
-<nav>
+<nav class="text-center">
 	{!! $posts !!}
 </nav>
 
