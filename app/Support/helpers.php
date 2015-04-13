@@ -36,3 +36,17 @@ if (! function_exists('a')) {
         return asset($url, config('cms.https', false));
     }
 }
+
+if (! function_exists('cache')) {
+    /**
+     * Cache something.
+     * 
+     * @param  string $key
+     * @param  callable $callback
+     * @return mixed
+     */
+    function cache($key, $callback)
+    {
+        return Cache::remember($key, config('cms.cache.lifetime'), $callback);
+    }
+}
