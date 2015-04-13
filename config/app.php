@@ -152,6 +152,8 @@ return [
 	    'Pingpong\Menus\MenusServiceProvider',
 	    'Pingpong\Widget\WidgetServiceProvider',
 
+	    'Barryvdh\Debugbar\ServiceProvider',
+
 	],
 
 	/*
@@ -204,6 +206,7 @@ return [
 		'Form' => 'Collective\Html\FormFacade',
 		'Html' => 'Collective\Html\HtmlFacade',
 		'Menu' => 'Pingpong\Menus\MenuFacade',
+		'Debugbar' => 'Barryvdh\Debugbar\Facade',
 	],
 
 ];
