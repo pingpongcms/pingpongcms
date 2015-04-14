@@ -46,3 +46,20 @@ if (! function_exists('cache')) {
         return Cache::remember($key, config('cms.cache.lifetime'), $callback);
     }
 }
+
+if (! function_exists('menu')) {
+    /**
+     * Get menu.
+     * 
+     * @param  string $name
+     * @return string
+     */
+    function menu($name)
+    {
+        if($menu = App\Menu::findByName($name)->first()) {
+            return $menu->render();
+        }
+
+        return null;
+    }
+}
