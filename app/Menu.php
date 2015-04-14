@@ -8,6 +8,8 @@ class Menu extends Model {
     	'name'
     ];
 
+    protected $with = ['items'];
+
     protected $presenter = 'App\Menus\Presenters\DefaultPresenter';
 
     public function items()

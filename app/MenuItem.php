@@ -14,6 +14,8 @@ class MenuItem extends Model {
     	'active'
     ];
 
+    protected $with = ['childs'];
+    
     public function parent()
     {
     	return $this->belongsTo('App\Menu', 'menu_id');
@@ -26,7 +28,7 @@ class MenuItem extends Model {
 
     public function hasChild()
     {
-    	return $this->childs()->count();
+    	return $this->childs->count();
     }
 
     public function getAttributesAttribute($value)
