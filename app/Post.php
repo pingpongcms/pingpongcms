@@ -26,17 +26,17 @@ class Post extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo('App\User');
     }
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany('App\Tag');
     }
 
     public function categories()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->belongsToMany('App\Category');
     }
 
     public function scopeType($query, $type)
