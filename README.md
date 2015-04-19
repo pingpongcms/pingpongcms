@@ -28,6 +28,10 @@ You can try out the latest version of pingpong cms in http://demo.pingpongcms.co
 
 Coming Soon
 
+## Issues
+
+Because this CMS is still in the development stage, the issue of this repository deactivated. If you have tried to develop versions of this cms and find errors, you can notify us by email to pingpong.labs@gmail.com.
+
 ## License
 
 ```
