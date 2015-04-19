@@ -5,7 +5,11 @@ A modern CMS based on Laravel PHP Framework.
 
 ## Server Requirements
 
-- PHP 5.5+
+- PHP >= 5.4
+- Mcrypt PHP Extension
+- OpenSSL PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
 
 ## Installation
 
