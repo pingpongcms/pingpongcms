@@ -1,0 +1,11 @@
+{
+	"name": "default",
+	"description": "Default theme of pingpongcms",
+	"author": [
+		{
+			"name": "Pingpong Labs",
+			"email": "pingpong.labs@gmail.com"
+		}
+	],
+	"enabled": true
+}
