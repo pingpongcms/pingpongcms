@@ -153,6 +153,7 @@ return [
 	    'Pingpong\Widget\WidgetServiceProvider',
 
 	    'Barryvdh\Debugbar\ServiceProvider',
+	    'Pingpong\Modules\ModulesServiceProvider',
 
 	],
 
