@@ -137,7 +137,7 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'pingpong-modules',
+        'vendor' => 'pingpongcms',
         'author' => [
             "name" => 'Pingpong Labs',
             'email' => 'pingpong.labs@gmail.com'
@@ -153,7 +153,7 @@ return [
     */
     'cache' => [
         'enabled' => false,
-        'key' => 'pingpong-modules',
+        'key' => 'pingpongcms',
         'lifetime' => 60
     ]
 
