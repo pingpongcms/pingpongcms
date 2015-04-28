@@ -35,7 +35,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin
     Route::resource('users', 'UsersController');
 });
 
-Route::get('{slug}', [
+Route::get('post/{slug}', [
     'as' => 'post',
     'uses' => 'PostsController@show'
 ]);
