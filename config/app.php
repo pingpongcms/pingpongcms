@@ -154,6 +154,7 @@ return [
 
 	    'Barryvdh\Debugbar\ServiceProvider',
 	    'Pingpong\Modules\ModulesServiceProvider',
+	    'Pingpong\Modules\Providers\BootstrapServiceProvider',
 
 	],
 
