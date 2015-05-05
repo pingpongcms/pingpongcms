@@ -209,6 +209,7 @@ return [
 		'Html' => 'Collective\Html\HtmlFacade',
 		'Menu' => 'Pingpong\Menus\MenuFacade',
 		'Debugbar' => 'Barryvdh\Debugbar\Facade',
+		'Module' => 'Pingpong\Modules\Facades\Module',
 	],
 
 ];
