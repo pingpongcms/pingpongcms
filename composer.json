@@ -1,0 +1,15 @@
+{
+	"name": "pingpongcms/core",
+	"description": "",
+	"authors": [
+		{
+			"name": "Pingpong Labs",
+			"email": "pingpong.labs@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Cms\\Core\\": ""
+		}
+	}
+}
