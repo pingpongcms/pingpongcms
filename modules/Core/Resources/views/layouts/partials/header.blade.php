@@ -203,14 +203,14 @@
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="{{ Auth::user()->gravatar_url }}" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">Alexander Pierce</span>
+                  <span class="hidden-xs">{{ Auth::user()->name }}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
                     <img src="{{ Auth::user()->gravatar(90) }}" class="img-circle" alt="{{ Auth::user()->name }}" />
                     <p>
-                      {{ Auth::user()->name }} - Web Developer
+                       - Web Developer
                       <small>Member since {{ Auth::user()->created_at->format('M, Y') }}</small>
                     </p>
                   </li>
