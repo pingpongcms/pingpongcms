@@ -7,11 +7,11 @@ use Illuminate\Contracts\Bus\SelfHandling;
 
 class RegisterCommand extends Command {
 
-	public $request;
+	public $data;
 
-	public function __construct($request)
+	public function __construct(array $data)
 	{
-		$this->request = $request;
+		$this->data = $data;
 	}
 
 }

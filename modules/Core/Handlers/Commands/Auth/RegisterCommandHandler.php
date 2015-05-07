@@ -16,9 +16,7 @@ class RegisterCommandHandler {
 
 	public function handle(RegisterCommand $command)
 	{
-		$data = $command->request->all();
-
-		$user = $this->registrar->create($data);
+		$user = $this->registrar->create($command->data);
 
 		return $user;
 	}

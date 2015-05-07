@@ -46,7 +46,7 @@ class AuthController extends Controller {
 
 	public function postRegister(RegisterRequest $request)
 	{
-		$user = $this->dispatch(new RegisterCommand($request));	
+		$user = $this->dispatch(new RegisterCommand($request->all()));	
 
 		auth()->login($user);
 
