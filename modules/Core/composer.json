@@ -1,6 +1,7 @@
 {
 	"name": "pingpongcms/core",
-	"description": "",
+	"description": "The Core of Pingpong CMS",
+	"license": "BSD-3-Clause",
 	"authors": [
 		{
 			"name": "Pingpong Labs",
@@ -11,5 +12,6 @@
 		"psr-4": {
 			"Cms\\Core\\": ""
 		}
-	}
+	},
+	"minimum-stability": "stable"
 }
