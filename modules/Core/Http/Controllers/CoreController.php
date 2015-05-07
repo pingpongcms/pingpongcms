@@ -9,4 +9,14 @@ class CoreController extends Controller {
 		return view('core::index');
 	}
 	
+	/**
+	* Show the Index Page.
+	* 
+	* @Get("/admin/settings")
+	*/
+	public function settings()
+	{
+		return view('core::settings');
+	}
+
 }

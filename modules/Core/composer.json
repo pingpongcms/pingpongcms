@@ -13,5 +13,8 @@
 			"Cms\\Core\\": ""
 		}
 	},
+	"require": {
+	    "laravelcollective/annotations": "~5.0"
+	},
 	"minimum-stability": "stable"
 }
