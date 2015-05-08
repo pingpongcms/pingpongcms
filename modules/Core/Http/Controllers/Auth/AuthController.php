@@ -3,6 +3,7 @@
 use Cms\Core\Commands\Auth\LoginCommand;
 use Cms\Core\Commands\Auth\LogoutCommand;
 use Cms\Core\Commands\Auth\RegisterCommand;
+use Cms\Core\Commands\Auth\VerifyEmailAddress;
 use Cms\Core\Contracts\Services\Cms;
 use Cms\Core\Http\Requests\Auth\LoginRequest;
 use Cms\Core\Http\Requests\Auth\RegisterRequest;
@@ -49,9 +50,7 @@ class AuthController extends Controller
     {
         $user = $this->dispatch(new RegisterCommand($request->all()));
 
-        auth()->login($user);
-
-        return $this->cms->redirect('/');
+        return redirect()->back();
     }
 
     public function getLogout()
@@ -60,4 +59,12 @@ class AuthController extends Controller
 
         return redirect('auth/login');
     }
+
+    public function getConfirmation($code)
+    {
+        $this->dispatch(new VerifyEmailAddress($code));
+
+        return redirect('auth/login');
+    }
+
 }

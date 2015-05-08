@@ -3,6 +3,7 @@
 namespace Cms\Core\Handlers\Commands\Auth;
 
 use Cms\Core\Commands\Auth\RegisterCommand;
+use Cms\Core\Events\UserWasRegistered;
 use Cms\Core\Services\Auth\Registrar;
 
 class RegisterCommandHandler
@@ -19,6 +20,8 @@ class RegisterCommandHandler
     {
         $user = $this->registrar->create($command->data);
 
+        event(new UserWasRegistered($user));
+        
         return $user;
     }
 }

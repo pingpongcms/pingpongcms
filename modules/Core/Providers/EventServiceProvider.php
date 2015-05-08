@@ -13,6 +13,9 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
+        'Cms\Core\Events\UserWasRegistered' => [
+            'Cms\Core\Handlers\Events\SendConfirmationEmail',
+        ],
     ];
 
     /**
