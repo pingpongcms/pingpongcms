@@ -18,7 +18,7 @@
     <link href="{{ Module::asset('core:components/adminlte/plugins/daterangepicker/daterangepicker-bs3.css') }}" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
     <link href="{{ Module::asset('core:components/adminlte/dist/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
-    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link href="{{ Module::asset('core:components/adminlte/dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" type="text/css" />
 

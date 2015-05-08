@@ -44,5 +44,4 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         return gravatar($this->email, $size, $default, $rating);
     }
-
 }

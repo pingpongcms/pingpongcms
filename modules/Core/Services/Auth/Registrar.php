@@ -4,11 +4,11 @@ namespace Cms\Core\Services\Auth;
 
 use Cms\Core\Entities\User;
 
-class Registrar {
+class Registrar
+{
 
-	public function create(array $data)
-	{
-		return User::create($data);
-	}
-	
+    public function create(array $data)
+    {
+        return User::create($data);
+    }
 }
