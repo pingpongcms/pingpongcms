@@ -50,6 +50,8 @@ class AuthController extends Controller
     {
         $user = $this->dispatch(new RegisterCommand($request->all()));
 
+        flash('Thanks for signing up! Please check your email.');
+
         return redirect()->back();
     }
 
@@ -57,12 +59,16 @@ class AuthController extends Controller
     {
         $this->dispatch(new LogoutCommand);
 
+        flash('You have been logged out.');
+
         return redirect('auth/login');
     }
 
     public function getConfirmation($code)
     {
         $this->dispatch(new VerifyEmailAddress($code));
+
+        flash('You have successfully verified your account.');
 
         return redirect('auth/login');
     }

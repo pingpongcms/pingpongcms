@@ -13,7 +13,8 @@
 	    "pingpong/sky": "2.0.*@dev",
 		"intervention/image": "~2.1",
 		"barryvdh/laravel-debugbar": "~2.0",
-	    "laravelcollective/annotations": "~5.0"
+	    "laravelcollective/annotations": "~5.0",
+		"laracasts/flash": "~1.3"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",

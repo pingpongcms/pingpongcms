@@ -11,6 +11,7 @@
 	<div class="login-box-body">
 		<p class="login-box-msg">Sign in to start your session</p>
 		@include('core::errors.validation')
+	    @include('flash::message')
 		<form action="{{ url('auth/login') }}" method="post">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			<div class="form-group has-feedback">

@@ -11,6 +11,7 @@
 	<div class="login-box-body">
 		<p class="login-box-msg">Register to get a free account</p>
 		@include('core::errors.validation')
+	    @include('flash::message')
 		<form action="{{ url('auth/register') }}" method="post">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 			<div class="form-group has-feedback">

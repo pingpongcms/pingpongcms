@@ -9,9 +9,12 @@
         "Cms\\Core\\Providers\\BusServiceProvider",
         "Cms\\Core\\Providers\\EventServiceProvider",
         "Cms\\Core\\Providers\\AnnotationsServiceProvider",
-        "Cms\\Core\\Providers\\CoreServiceProvider"
+        "Cms\\Core\\Providers\\CoreServiceProvider",
+        "Laracasts\\Flash\\FlashServiceProvider"
     ],
-    "aliases":{},
+    "aliases":{
+        "Flash": "Laracasts\\Flash\\Flash"
+    },
     "files": [
         "start.php"
     ]
