@@ -12,6 +12,7 @@ class LoginCommandHandler
         $credentials = [
             'email' => $command->email,
             'password' => $command->password,
+            'confirmed' => 1
         ];
 
         $remember = $command->remember;
