@@ -20,4 +20,6 @@ require __DIR__ . '/middlewares.php';
 
 require __DIR__ . '/helpers.php';
 
+require __DIR__ . '/menus.php';
+
 require __DIR__ . '/Http/routes.php';

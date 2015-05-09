@@ -10,10 +10,12 @@
         "Cms\\Core\\Providers\\EventServiceProvider",
         "Cms\\Core\\Providers\\AnnotationsServiceProvider",
         "Cms\\Core\\Providers\\CoreServiceProvider",
-        "Laracasts\\Flash\\FlashServiceProvider"
+        "Laracasts\\Flash\\FlashServiceProvider",
+        "Pingpong\\Menus\\MenusServiceProvider"
     ],
     "aliases":{
-        "Flash": "Laracasts\\Flash\\Flash"
+        "Flash": "Laracasts\\Flash\\Flash",
+        "Menu": "Pingpong\\Menus\\MenuFacade"
     },
     "files": [
         "start.php"
