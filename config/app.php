@@ -145,7 +145,6 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
-		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Pingpong\Themes\ThemesServiceProvider',
 		'Pingpong\Generators\GeneratorsServiceProvider',
 	    'Collective\Html\HtmlServiceProvider',
