@@ -52,7 +52,7 @@ class AuthController extends Controller
 
         flash('Thanks for signing up! Please check your email.');
 
-        return redirect()->back();
+        return redirect('auth/login');
     }
 
     public function getLogout()
