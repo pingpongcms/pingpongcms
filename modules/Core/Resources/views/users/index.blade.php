@@ -203,11 +203,10 @@
 
         $scope.fetchData = function () {
             $scope.latest().then(function (response, status) {
-                    // console.log(response, status);
-                    $scope.users = response.data;
-                }, function (response, status) {
-                    alert('Error!');
-                });
+                $scope.users = response.data;
+            }, function (response, status) {
+                alert('Error!');
+            });
         }
 
         $scope.fetchData();
@@ -225,20 +224,16 @@
 
         $scope.store = function () {
             var formData = $scope.getFormData('.form-add');
-            console.log(formData);
             $http.post(BASE_URL + 'api/users', formData)
-                .then(function (response, status) {
-                    // console.log(response);
-                    
-                    if (response.data.errors) {
-                        $scope.showErrors(response.data.errors, '.form-add');
-                    } else {
-                        $scope.modal.modal('hide');
-                        $scope.resetForm();
-                        $scope.fetchData();
-                    }
-                    
-                });
+            .then(function (response, status) {
+                if (response.data.errors) {
+                    $scope.showErrors(response.data.errors, '.form-add');
+                } else {
+                    $scope.modal.modal('hide');
+                    $scope.resetForm();
+                    $scope.fetchData();
+                }
+            });
         }
 
         $scope.showErrors = function (errors, form) {
@@ -246,7 +241,6 @@
                 var input = $(form + ' #'+i);
                 input.parent().find('div.text-danger').remove();
                 input.after('<div class="text-danger">'+v+'</div>');
-                // console.log(i, v);
             });
         }
 
@@ -263,37 +257,31 @@
             var formData = $scope.getFormData(form);
 
             $http.put(BASE_URL + 'api/users/'+id, formData)
-                .then(function (response) {
-                    console.log(response);
-
-                    if (response.data.errors) {
-                        $scope.showErrors(response.data.errors, form);
-                    } else {
-                        modal.modal('hide');
-                        $scope.fetchData();
-                    }
-                });
+            .then(function (response) {
+                if (response.data.errors) {
+                    $scope.showErrors(response.data.errors, form);
+                } else {
+                    modal.modal('hide');
+                    $scope.fetchData();
+                }
+            });
         }
 
         $scope.delete = function (id) {
             var modal = $('#modalDelete'+id);
             $http.delete(BASE_URL + 'api/users/'+id)
-                .then(function (response) {
-                    // console.log(response);
-                    modal.modal('hide');
-                    $scope.fetchData();
-                });
-
+            .then(function (response) {
+                modal.modal('hide');
+                $scope.fetchData();
+            });
         }
 
         $scope.show = function (id) {
             $http.get(BASE_URL + 'api/users/'+id)
-                .then(function (response) {
-                    // console.log(response);
-                    modal.modal('hide');
-                    $scope.fetchData();
-                });
-
+            .then(function (response) {
+                modal.modal('hide');
+                $scope.fetchData();
+            });
         }
     }
 </script>
