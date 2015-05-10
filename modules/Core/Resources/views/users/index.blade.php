@@ -20,7 +20,10 @@
                 </div>
             </div>
             <div class="box-body">
-                <table class="table">
+                <div class="well" ng-hide="users">
+                    There are no users.
+                </div>
+                <table class="table" ng-show="users">
                     <thead>
                         <th>Name</th>
                         <th>Email</th>
