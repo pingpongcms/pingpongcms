@@ -1,0 +1,19 @@
+{
+	"name": "pingpongcms/api",
+	"description": "API Module of Pingpong CMS",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Pingpong Labs",
+			"email": "pingpong.labs@gmail.com"
+		}
+	],
+	"require": {
+		"prettus/l5-repository": "2.0.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Cms\\Api\\": ""
+		}
+	}
+}

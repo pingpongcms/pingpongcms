@@ -1,0 +1,16 @@
+{
+    "name": "Api",
+    "alias": "api",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Cms\\Api\\Providers\\ApiServiceProvider",
+        "Prettus\\Repository\\Providers\\RepositoryServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
