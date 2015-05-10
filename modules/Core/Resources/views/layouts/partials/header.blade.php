@@ -210,7 +210,7 @@
                   <li class="user-header">
                     <img src="{{ Auth::user()->gravatar(90) }}" class="img-circle" alt="{{ Auth::user()->name }}" />
                     <p>
-                       - Web Developer
+                       {{ Auth::user()->name }}
                       <small>Member since {{ Auth::user()->created_at->format('M, Y') }}</small>
                     </p>
                   </li>
