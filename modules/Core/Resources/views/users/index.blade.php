@@ -49,7 +49,7 @@
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button type="button" ng-click="delete(user.id)" class="btn btn-danger">Delete</button>
+                <button type="button" ng-click="delete(user.id)" class="btn btn-delete-user btn-danger">Delete</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -284,10 +284,13 @@
 
         $scope.delete = function (id) {
             var modal = $('#modalDelete'+id);
+            var btn = $('.btn-delete-user');
+            btn.button('loading');
             $http.delete(BASE_URL + 'api/users/'+id)
             .then(function (response) {
                 modal.modal('hide');
                 $scope.fetchData();
+                btn.button('reset');
             });
         }
 
