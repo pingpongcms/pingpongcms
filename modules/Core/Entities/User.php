@@ -31,6 +31,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     protected $appends = ['gravatar_url'];
 
+    protected $casts = [
+        'confirmed' => 'boolean'
+    ];
+
     public function setPasswordAttribute($value)
     {
         $this->attributes['password'] = bcrypt($value);
