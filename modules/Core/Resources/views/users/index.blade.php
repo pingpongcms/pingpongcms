@@ -1,5 +1,7 @@
 @extends('core::layouts.master')
 
+@section('title', 'Users')
+
 @section('content')
 
 <div ng-controller="UsersController">
@@ -22,12 +24,14 @@
                     <thead>
                         <th>Name</th>
                         <th>Email</th>
+                        <th>Registered At</th>
                         <th>Action</th>
                     </thead>
                     <tbody>
                         <tr ng-repeat="user in users">
                             <td>@{{ user.name }}</td>
                             <td>@{{ user.email }}</td>
+                            <td>@{{ user.created_at }}</td>
                             <td>
                                 <div class="btn-group">
                                     <a class="btn btn-default btn-sm" data-toggle="modal" href="#modalShow@{{ user.id }}"><i class="fa fa-eye"></i></a>
