@@ -10,4 +10,5 @@ Route::group(['namespace' => $namespace . '\Auth'], function () {
 
 Route::group(['prefix' => $prefix, 'middleware' => 'cms.auth', 'namespace' => $namespace], function () {
     Route::get('/', 'CoreController@index');
+    Route::get('/users', 'UsersController@index');
 });
