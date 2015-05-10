@@ -130,7 +130,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                <button type="button" ng-click="update(user.id)" class="btn btn-primary">Save</button>
+                <button type="button" ng-click="update(user.id)" class="btn btn-update-user btn-primary">Save</button>
             </div>
         </div><!-- /.modal-content -->
         </form>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" ng-click="resetForm('.form-add')" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="button" ng-click="store()" class="btn btn-primary">Save</button>
+                    <button type="button" ng-click="store()" class="btn btn-store-user btn-primary">Save</button>
                 </div>
             </div><!-- /.modal-content -->
             </form>
@@ -211,8 +211,6 @@
 
         $scope.fetchData();
 
-        $scope.modal = $('#modalAdd');
-
         $scope.getFormData = function (form) {
             return {
                 name: $(form + ' #name').val(),
@@ -224,15 +222,21 @@
 
         $scope.store = function () {
             var formData = $scope.getFormData('.form-add');
+            var modal = $('#modalAdd');
+            var btn = $('.btn-store-user');
+
+            btn.button('loading');
+
             $http.post(BASE_URL + 'api/users', formData)
             .then(function (response, status) {
                 if (response.data.errors) {
                     $scope.showErrors(response.data.errors, '.form-add');
                 } else {
-                    $scope.modal.modal('hide');
+                    modal.modal('hide');
                     $scope.resetForm();
                     $scope.fetchData();
                 }
+                btn.button('reset');
             });
         }
 
@@ -255,6 +259,9 @@
             var modal = $('#modalEdit'+id);
             var form = '.formEdit'+id;
             var formData = $scope.getFormData(form);
+            var btn = $('.btn-update-user');
+
+            btn.button('loading');
 
             $http.put(BASE_URL + 'api/users/'+id, formData)
             .then(function (response) {
@@ -264,6 +271,8 @@
                     modal.modal('hide');
                     $scope.fetchData();
                 }
+
+                btn.button('reset');
             });
         }
 
