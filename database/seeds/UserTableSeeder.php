@@ -1,6 +1,6 @@
 <?php
 
-use App\User;
+use Cms\Core\Entities\User;
 use Illuminate\Database\Seeder;
 
 class UserTableSeeder extends Seeder {
@@ -12,6 +12,7 @@ class UserTableSeeder extends Seeder {
     		'email' => 'pingpong.labs@gmail.com',
     		'username' => 'admin',
     		'password' => 'secret',
+    		'confirmed' => 1
     	]);
     }
 
