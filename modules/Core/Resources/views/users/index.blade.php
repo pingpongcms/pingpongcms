@@ -34,27 +34,29 @@
                                     <a class="btn btn-default btn-sm" data-toggle="modal" href="#modalEdit@{{ user.id }}"><i class="fa fa-edit"></i></a>
                                     <a data-toggle="modal" class="btn btn-default btn-sm" href="#modalDelete@{{ user.id }}"><i class="fa fa-times"></i></a>
                                 </div>
+{{-- Modal Delete --}}
+<div class="modal fade" id="modalDelete@{{ user.id }}">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Delete User</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Are you sure want to delete this user?
+                </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" ng-click="delete(user.id)" class="btn btn-danger">Delete</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{{-- End of Model Delete --}}
 
-                                <div class="modal fade" id="modalDelete@{{ user.id }}">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                <h4 class="modal-title">Delete User</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>
-                                                    Are you sure want to delete this user?
-                                                </p>
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                                                <button type="button" ng-click="delete(user.id)" class="btn btn-danger">Delete</button>
-                                            </div>
-                                        </div><!-- /.modal-content -->
-                                    </div><!-- /.modal-dialog -->
-                                </div><!-- /.modal -->
-
+{{-- Modal Show --}}
 <div class="modal fade" id="modalShow@{{ user.id }}">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -99,7 +101,9 @@
         </div>
     </div>
 </div>
+{{-- End of Modal Show --}}
 
+{{-- Modal Edit --}}
 <div class="modal fade" id="modalEdit@{{ user.id }}">
     <div class="modal-dialog">
             <form class="formEdit@{{user.id}}">
@@ -136,6 +140,7 @@
         </form>
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+{{-- End of Modal Edit --}}
                             </td>
                         </tr>
                     </tbody>       
@@ -147,7 +152,7 @@
         </div><!-- /.box -->
     </section>
 
-    
+    {{-- Modal Add --}}
     <div class="modal fade" id="modalAdd">
         <div class="modal-dialog">
             <form class="form-add">
@@ -184,6 +189,7 @@
             </form>
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    {{-- Modal Add --}}
 </div>
 
 @stop
