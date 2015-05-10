@@ -48,8 +48,8 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            {{{ $title or 'Dashboard' }}}
-            <small>{{{ $subtitle or '' }}}</small>
+            {{ View::yieldContent('title', 'Dashboard') }}
+            <small>{{ View::yieldContent('subtitle') }}</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
