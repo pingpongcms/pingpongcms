@@ -14,6 +14,8 @@
 		}
 	},
 	"require": {
+		"pingpong/modules": "~2.0",
+		"pingpongcms/api": "dev-master",
 	    "laravelcollective/annotations": "~5.0",
 		"laracasts/flash": "~1.3"
 	},
