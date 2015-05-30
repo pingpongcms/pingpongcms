@@ -12,5 +12,8 @@
     "aliases":{},
     "files": [
         "start.php"
-    ]
+    ],
+    "require": {
+        "prettus/l5-repository": "2.0.*"
+    }
 }
