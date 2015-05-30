@@ -3,24 +3,25 @@
 namespace Cms\Core\Handlers\Commands\Auth;
 
 use Cms\Core\Commands\Auth\RegisterCommand;
+use Cms\Core\Events\UserWasRegistered;
 use Cms\Core\Services\Auth\Registrar;
 
-class RegisterCommandHandler {
+class RegisterCommandHandler
+{
 
-	protected $registrar;
+    protected $registrar;
 
-	public function __construct(Registrar $registrar)
-	{
-		$this->registrar = $registrar;
-	}
+    public function __construct(Registrar $registrar)
+    {
+        $this->registrar = $registrar;
+    }
 
-	public function handle(RegisterCommand $command)
-	{
-		$data = $command->request->all();
+    public function handle(RegisterCommand $command)
+    {
+        $user = $this->registrar->create($command->data);
 
-		$user = $this->registrar->create($data);
-
-		return $user;
-	}
-
+        event(new UserWasRegistered($user));
+        
+        return $user;
+    }
 }

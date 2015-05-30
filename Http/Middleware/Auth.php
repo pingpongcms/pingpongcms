@@ -1,10 +1,11 @@
 <?php
 
-namespace Cms\Core\Http\Middleware; 
+namespace Cms\Core\Http\Middleware;
 
 use Closure;
 
-class Auth {
+class Auth
+{
 
     /**
      * Handle an incoming request.
@@ -15,7 +16,7 @@ class Auth {
      */
     public function handle($request, Closure $next)
     {
-        if ( ! auth()->check()) {
+        if (! auth()->check()) {
             if ($request->ajax()) {
                 return response()->json([
                     'status' => false,
@@ -27,7 +28,6 @@ class Auth {
             return redirect('auth/login');
         }
         
-    	return $next($request);
+        return $next($request);
     }
-    
 }

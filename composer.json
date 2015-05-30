@@ -1,6 +1,7 @@
 {
 	"name": "pingpongcms/core",
-	"description": "",
+	"description": "The Core of Pingpong CMS",
+	"license": "BSD-3-Clause",
 	"authors": [
 		{
 			"name": "Pingpong Labs",
@@ -11,5 +12,14 @@
 		"psr-4": {
 			"Cms\\Core\\": ""
 		}
-	}
+	},
+	"require": {
+		"laravel/framework": "5.0.*",
+		"pingpong/modules": "~2.0",
+		"pingpong/menus": "~2.0",
+		"pingpongcms/api": "dev-master",
+	    "laravelcollective/annotations": "~5.0",
+		"laracasts/flash": "~1.3"
+	},
+	"minimum-stability": "stable"
 }

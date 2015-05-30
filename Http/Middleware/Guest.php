@@ -1,10 +1,11 @@
 <?php
 
-namespace Cms\Core\Http\Middleware; 
+namespace Cms\Core\Http\Middleware;
 
 use Closure;
 
-class Guest {
+class Guest
+{
 
     /**
      * Handle an incoming request.
@@ -16,10 +17,9 @@ class Guest {
     public function handle($request, Closure $next)
     {
         if (auth()->check()) {
-            return cms()->redirect('/');    
+            return cms()->redirect('/');
         }
 
-    	return $next($request);
+        return $next($request);
     }
-    
 }

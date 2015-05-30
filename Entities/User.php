@@ -18,7 +18,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      * @var array
      */
     protected $fillable = [
-        'name', 'username', 'email', 'password'
+        'name', 'username', 'email', 'password',
+        'confirmation_code', 'confirmed'
     ];
 
     /**
@@ -26,9 +27,13 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      *
      * @var array
      */
-    protected $hidden = ['password', 'remember_token'];
+    protected $hidden = ['password', 'remember_token', 'confirmation_code'];
 
     protected $appends = ['gravatar_url'];
+
+    protected $casts = [
+        'confirmed' => 'boolean'
+    ];
 
     public function setPasswordAttribute($value)
     {
@@ -45,4 +50,11 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         return gravatar($this->email, $size, $default, $rating);
     }
 
+    public function confirm()
+    {
+        $this->confirmed = 1;
+        $this->confirmation_code = null;
+        $this->save();
+    }
+    
 }

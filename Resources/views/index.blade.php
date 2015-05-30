@@ -652,3 +652,12 @@
         </section><!-- /.content -->
 
 @stop
+
+@section('script')
+  
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="{{ Module::asset('core:components/adminlte/dist/js/pages/dashboard2.js') }}" type="text/javascript"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="{{ Module::asset('core:components/adminlte/dist/js/demo.js') }}" type="text/javascript"></script>
+@stop

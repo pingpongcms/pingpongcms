@@ -18,7 +18,7 @@
     <link href="{{ Module::asset('core:components/adminlte/plugins/daterangepicker/daterangepicker-bs3.css') }}" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
     <link href="{{ Module::asset('core:components/adminlte/dist/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
-    <!-- AdminLTE Skins. Choose a skin from the css/skins 
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link href="{{ Module::asset('core:components/adminlte/dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" type="text/css" />
 
@@ -28,8 +28,17 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-resource.js"></script>
+    <script type="text/javascript" src="{{ Module::asset('core:AngularBooter/angularBooter.js') }}"></script>
+    <script>
+      BASE_URL = '{{ url() }}/';
+      
+      window.Cms = new AngularBooter('Cms'); // <-- Pass in what you want to call your ng-app.
+    </script>
   </head>
-  <body class="skin-blue">
+  <body ng-app="Cms" class="skin-blue">
     <div class="wrapper">
       @include('core::layouts.partials.header')
       @include('core::layouts.partials.sidebar')
@@ -39,8 +48,8 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Dashboard
-            <small>Version 2.0</small>
+            {{ View::yieldContent('title', 'Dashboard') }}
+            <small>{{ View::yieldContent('subtitle') }}</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -83,10 +92,9 @@
     <!-- ChartJS 1.0.1 -->
     <script src="{{ Module::asset('core:components/adminlte/plugins/chartjs/Chart.min.js') }}" type="text/javascript"></script>
 
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="{{ Module::asset('core:components/adminlte/dist/js/pages/dashboard2.js') }}" type="text/javascript"></script>
-
-    <!-- AdminLTE for demo purposes -->
-    <script src="{{ Module::asset('core:components/adminlte/dist/js/demo.js') }}" type="text/javascript"></script>
+    @yield('script')
+    <script type="text/javascript">
+      window.Cms.boot();
+    </script>
   </body>
 </html>
