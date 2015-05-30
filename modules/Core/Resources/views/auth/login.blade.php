@@ -6,7 +6,7 @@
 
 <div class="login-box">
 	<div class="login-logo">
-	<a href="#"><b>Pingpong</b> CMS</a>
+	<a href="#">{!! config('cms.title') !!}</a>
 	</div><!-- /.login-logo -->
 	<div class="login-box-body">
 		<p class="login-box-msg">Sign in to start your session</p>
