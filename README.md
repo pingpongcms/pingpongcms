@@ -26,7 +26,7 @@ bower install
 
 ## Demo
 
-You can try out the latest version of pingpong cms in http://demo.pingpongcms.com.
+You can try out the develop version of pingpong cms in http://demo.pingpongcms.com.
 
 ## Documentation
 
