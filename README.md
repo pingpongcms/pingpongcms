@@ -26,7 +26,13 @@ bower install
 
 ## Demo
 
-You can try out the develop version of pingpong cms in http://demo.pingpongcms.com.
+**Site**
+
+You can try out the develop version of pingpong cms in http://demo.pingpongcms.com. 
+
+**Administrator**
+
+You can also try the administrator page of CMS by visiting http://demo.pingpongcms.com/administrator. Default login credentials is `pingpong.labs@gmail.com` for the email and `secret` for the password.
 
 ## Documentation
 
