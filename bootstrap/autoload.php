@@ -33,3 +33,17 @@ if (file_exists($compiledPath))
 {
 	require $compiledPath;
 }
+
+
+/**
+ * Pingpong Sky Workbench.
+ * 
+ * @var string
+ */
+
+$skyPath = __DIR__.'/../workbench/pingpong/sky/vendor/autoload.php';
+
+if (file_exists($skyPath))
+{
+	require $skyPath;
+}
