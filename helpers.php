@@ -1,7 +1,5 @@
 <?php
 
-use Cms\Core\Entities\User;
-
 if (! function_exists('cms')) {
     function cms()
     {
@@ -12,6 +10,15 @@ if (! function_exists('cms')) {
 if (! function_exists('user')) {
     function user()
     {
-        return new User;
+        $user = config('auth.model', 'Cms\Core\Entities\User');
+
+        return new $user;
     }
+}
+
+if (!function_exists('page_title')) {
+	function page_title($default = null)
+	{
+		return strip_tags(config('cms.title', $default));
+	}
 }
