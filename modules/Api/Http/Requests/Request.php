@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Api\Http\Requests;
+namespace Pingpong\Cms\Api\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\JsonResponse;

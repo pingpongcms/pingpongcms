@@ -6,7 +6,7 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Cms\\Api\\Providers\\ApiServiceProvider",
+        "Pingpong\\Cms\\Api\\Providers\\ApiServiceProvider",
         "Prettus\\Repository\\Providers\\RepositoryServiceProvider"
     ],
     "aliases":{},

@@ -1,5 +1,5 @@
 <?php
 
-Route::group(['prefix' => 'api', 'namespace' => 'Cms\Api\Http\Controllers'], function () {
+Route::group(['prefix' => 'api', 'namespace' => 'Pingpong\Cms\Api\Http\Controllers'], function () {
     Route::resource('users', 'UsersController');
 });

@@ -1,8 +1,8 @@
-<?php namespace Cms\Api\Http\Controllers;
+<?php namespace Pingpong\Cms\Api\Http\Controllers;
 
-use Cms\Api\Http\Requests\Users\CreateUserRequest;
-use Cms\Api\Http\Requests\Users\UpdateUserRequest;
-use Cms\Api\Repositories\Users\UserRepository;
+use Pingpong\Cms\Api\Http\Requests\Users\CreateUserRequest;
+use Pingpong\Cms\Api\Http\Requests\Users\UpdateUserRequest;
+use Pingpong\Cms\Api\Repositories\Users\UserRepository;
 use Illuminate\Http\Request;
 use Pingpong\Modules\Routing\Controller;
 

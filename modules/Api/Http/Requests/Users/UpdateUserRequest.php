@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Api\Http\Requests\Users;
+namespace Pingpong\Cms\Api\Http\Requests\Users;
 
-use Cms\Api\Http\Requests\Request;
+use Pingpong\Cms\Api\Http\Requests\Request;
 
 class UpdateUserRequest extends Request
 {

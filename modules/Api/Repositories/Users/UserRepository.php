@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Api\Repositories\Users;
+namespace Pingpong\Cms\Api\Repositories\Users;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 
@@ -21,6 +21,6 @@ class UserRepository extends BaseRepository
 
     public function model()
     {
-        return 'Cms\Core\Entities\User';
+        return 'Pingpong\Cms\Core\Entities\User';
     }
 }

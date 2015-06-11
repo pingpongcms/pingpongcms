@@ -1,4 +1,4 @@
-<?php namespace Cms\Api\Providers;
+<?php namespace Pingpong\Cms\Api\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
