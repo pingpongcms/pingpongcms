@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Core\Commands\Auth;
+namespace Pingpong\Cms\Core\Commands\Auth;
 
-use Cms\Core\Commands\Command;
+use Pingpong\Cms\Core\Commands\Command;
 use Illuminate\Contracts\Bus\SelfHandling;
 
 class LogoutCommand extends Command implements SelfHandling

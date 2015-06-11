@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Core\Http\Requests\Auth;
+namespace Pingpong\Cms\Core\Http\Requests\Auth;
 
-use Cms\Core\Http\Requests\Request;
+use Pingpong\Cms\Core\Http\Requests\Request;
 
 class LoginRequest extends Request
 {

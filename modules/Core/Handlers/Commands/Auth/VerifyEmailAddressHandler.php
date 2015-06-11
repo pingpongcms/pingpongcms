@@ -1,10 +1,10 @@
 <?php
 
-namespace Cms\Core\Handlers\Commands\Auth;
+namespace Pingpong\Cms\Core\Handlers\Commands\Auth;
 
-use Cms\Core\Commands\Auth\VerifyEmailAddress;
-use Cms\Core\Confirmation\InvalidConfirmationCodeException;
-use Cms\Core\Entities\User;
+use Pingpong\Cms\Core\Commands\Auth\VerifyEmailAddress;
+use Pingpong\Cms\Core\Confirmation\InvalidConfirmationCodeException;
+use Pingpong\Cms\Core\Entities\User;
 
 class VerifyEmailAddressHandler {
 

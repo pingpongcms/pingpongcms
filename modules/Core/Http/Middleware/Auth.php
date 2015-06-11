@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Http\Middleware;
+namespace Pingpong\Cms\Core\Http\Middleware;
 
 use Closure;
 

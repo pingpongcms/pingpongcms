@@ -1,5 +1,5 @@
 <?php
 
-namespace Cms\Core\Confirmation;
+namespace Pingpong\Cms\Core\Confirmation;
 
 class InvalidConfirmationCodeException extends \Exception {}

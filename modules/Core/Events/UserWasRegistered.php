@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Events;
+namespace Pingpong\Cms\Core\Events;
 
 class UserWasRegistered {
 

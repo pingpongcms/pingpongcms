@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Presenters\Menus;
+namespace Pingpong\Cms\Core\Presenters\Menus;
 
 use Pingpong\Menus\Presenters\Bootstrap\NavbarPresenter;
 

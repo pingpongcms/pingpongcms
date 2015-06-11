@@ -28,7 +28,7 @@ return [
 	|
 	*/
 
-	'model' => 'Cms\Core\Entities\User',
+	'model' => 'Pingpong\Cms\Core\Entities\User',
 
 	/*
 	|--------------------------------------------------------------------------

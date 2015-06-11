@@ -6,10 +6,10 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Cms\\Core\\Providers\\BusServiceProvider",
-        "Cms\\Core\\Providers\\EventServiceProvider",
-        "Cms\\Core\\Providers\\AnnotationsServiceProvider",
-        "Cms\\Core\\Providers\\CoreServiceProvider",
+        "Pingpong\\Cms\\Core\\Providers\\BusServiceProvider",
+        "Pingpong\\Cms\\Core\\Providers\\EventServiceProvider",
+        "Pingpong\\Cms\\Core\\Providers\\AnnotationsServiceProvider",
+        "Pingpong\\Cms\\Core\\Providers\\CoreServiceProvider",
         "Laracasts\\Flash\\FlashServiceProvider",
         "Pingpong\\Menus\\MenusServiceProvider"
     ],

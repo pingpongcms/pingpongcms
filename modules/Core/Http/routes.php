@@ -1,6 +1,6 @@
 <?php
 
-$namespace = 'Cms\Core\Http\Controllers';
+$namespace = 'Pingpong\Cms\Core\Http\Controllers';
 
 $prefix = cms()->prefix();
 

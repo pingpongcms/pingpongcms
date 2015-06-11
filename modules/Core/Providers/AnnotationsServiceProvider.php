@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Providers;
+namespace Pingpong\Cms\Core\Providers;
 
 use Collective\Annotations\AnnotationsServiceProvider as ServiceProvider;
 
@@ -20,7 +20,7 @@ class AnnotationsServiceProvider extends ServiceProvider
      * @var array
      */
     protected $scanRoutes = [
-        'Cms\Core\Http\Controllers\CoreController',
+        'Pingpong\Cms\Core\Http\Controllers\CoreController',
     ];
 
     /**

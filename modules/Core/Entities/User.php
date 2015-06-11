@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Entities;
+namespace Pingpong\Cms\Core\Entities;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;

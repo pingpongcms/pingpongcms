@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Core\Services\Cms;
+namespace Pingpong\Cms\Core\Services\Cms;
 
-use Cms\Core\Contracts\Services\Cms as CmsContract;
+use Pingpong\Cms\Core\Contracts\Services\Cms as CmsContract;
 
 class Cms implements CmsContract
 {

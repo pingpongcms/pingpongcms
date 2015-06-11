@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Core\Services\Auth;
+namespace Pingpong\Cms\Core\Services\Auth;
 
-use Cms\Core\Entities\User;
+use Pingpong\Cms\Core\Entities\User;
 
 class Registrar
 {

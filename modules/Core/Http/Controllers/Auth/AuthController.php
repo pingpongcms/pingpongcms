@@ -1,12 +1,12 @@
-<?php namespace Cms\Core\Http\Controllers\Auth;
+<?php namespace Pingpong\Cms\Core\Http\Controllers\Auth;
 
-use Cms\Core\Commands\Auth\LoginCommand;
-use Cms\Core\Commands\Auth\LogoutCommand;
-use Cms\Core\Commands\Auth\RegisterCommand;
-use Cms\Core\Commands\Auth\VerifyEmailAddress;
-use Cms\Core\Contracts\Services\Cms;
-use Cms\Core\Http\Requests\Auth\LoginRequest;
-use Cms\Core\Http\Requests\Auth\RegisterRequest;
+use Pingpong\Cms\Core\Commands\Auth\LoginCommand;
+use Pingpong\Cms\Core\Commands\Auth\LogoutCommand;
+use Pingpong\Cms\Core\Commands\Auth\RegisterCommand;
+use Pingpong\Cms\Core\Commands\Auth\VerifyEmailAddress;
+use Pingpong\Cms\Core\Contracts\Services\Cms;
+use Pingpong\Cms\Core\Http\Requests\Auth\LoginRequest;
+use Pingpong\Cms\Core\Http\Requests\Auth\RegisterRequest;
 use Pingpong\Modules\Routing\Controller;
 
 class AuthController extends Controller

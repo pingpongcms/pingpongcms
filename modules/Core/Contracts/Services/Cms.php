@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Contracts\Services;
+namespace Pingpong\Cms\Core\Contracts\Services;
 
 interface Cms
 {

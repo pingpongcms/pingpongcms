@@ -3,14 +3,14 @@
 if (! function_exists('cms')) {
     function cms()
     {
-        return app('Cms\Core\Contracts\Services\Cms');
+        return app('Pingpong\Cms\Core\Contracts\Services\Cms');
     }
 }
 
 if (! function_exists('user')) {
     function user()
     {
-        $user = config('auth.model', 'Cms\Core\Entities\User');
+        $user = config('auth.model', 'Pingpong\Cms\Core\Entities\User');
 
         return new $user;
     }

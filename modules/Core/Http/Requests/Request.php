@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Http\Requests;
+namespace Pingpong\Cms\Core\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

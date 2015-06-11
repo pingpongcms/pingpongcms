@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Providers;
+namespace Pingpong\Cms\Core\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -17,7 +17,7 @@ class BusServiceProvider extends ServiceProvider
     {
         $dispatcher->mapUsing(function ($command) {
             return Dispatcher::simpleMapping(
-                $command, 'Cms\Core\Commands', 'Cms\Core\Handlers\Commands'
+                $command, 'Pingpong\Cms\Core\Commands', 'Pingpong\Cms\Core\Handlers\Commands'
             );
         });
     }

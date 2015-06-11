@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Core\Handlers\Events;
+namespace Pingpong\Cms\Core\Handlers\Events;
 
-use Cms\Core\Events\UserWasRegistered;
+use Pingpong\Cms\Core\Events\UserWasRegistered;
 use Illuminate\Support\Facades\Mail;
 
 class SendConfirmationEmail {

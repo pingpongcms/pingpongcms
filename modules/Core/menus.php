@@ -2,7 +2,7 @@
 
 Menu::create('sidebar', function ($menu)
 {
-	$menu->setPresenter('Cms\Core\Presenters\Menus\SidebarPresenter');
+	$menu->setPresenter('Pingpong\Cms\Core\Presenters\Menus\SidebarPresenter');
 	$menu->setPrefixUrl(cms()->prefix());
 	$menu->enableOrdering();
 	$menu->header('MAIN NAVIGATION');

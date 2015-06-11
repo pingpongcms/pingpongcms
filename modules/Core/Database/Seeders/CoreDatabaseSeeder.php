@@ -1,4 +1,4 @@
-<?php namespace Cms\Core\Database\Seeders;
+<?php namespace Pingpong\Cms\Core\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;

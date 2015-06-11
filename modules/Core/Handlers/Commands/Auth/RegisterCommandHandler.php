@@ -1,10 +1,10 @@
 <?php
 
-namespace Cms\Core\Handlers\Commands\Auth;
+namespace Pingpong\Cms\Core\Handlers\Commands\Auth;
 
-use Cms\Core\Commands\Auth\RegisterCommand;
-use Cms\Core\Events\UserWasRegistered;
-use Cms\Core\Services\Auth\Registrar;
+use Pingpong\Cms\Core\Commands\Auth\RegisterCommand;
+use Pingpong\Cms\Core\Events\UserWasRegistered;
+use Pingpong\Cms\Core\Services\Auth\Registrar;
 
 class RegisterCommandHandler
 {

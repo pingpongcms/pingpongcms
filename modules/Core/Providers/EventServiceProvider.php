@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Providers;
+namespace Pingpong\Cms\Core\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Cms\Core\Events\UserWasRegistered' => [
-            'Cms\Core\Handlers\Events\SendConfirmationEmail',
+        'Pingpong\Cms\Core\Events\UserWasRegistered' => [
+            'Pingpong\Cms\Core\Handlers\Events\SendConfirmationEmail',
         ],
     ];
 

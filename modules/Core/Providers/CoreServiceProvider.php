@@ -1,4 +1,4 @@
-<?php namespace Cms\Core\Providers;
+<?php namespace Pingpong\Cms\Core\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -29,8 +29,8 @@ class CoreServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton(
-            'Cms\Core\Contracts\Services\Cms',
-            'Cms\Core\Services\Cms\Cms'
+            'Pingpong\Cms\Core\Contracts\Services\Cms',
+            'Pingpong\Cms\Core\Services\Cms\Cms'
         );
     }
 

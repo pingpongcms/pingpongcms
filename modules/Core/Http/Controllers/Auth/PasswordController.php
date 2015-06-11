@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Http\Controllers\Auth;
+namespace Pingpong\Cms\Core\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;

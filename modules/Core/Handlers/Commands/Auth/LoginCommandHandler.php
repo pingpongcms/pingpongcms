@@ -1,8 +1,8 @@
 <?php
 
-namespace Cms\Core\Handlers\Commands\Auth;
+namespace Pingpong\Cms\Core\Handlers\Commands\Auth;
 
-use Cms\Core\Commands\Auth\LoginCommand;
+use Pingpong\Cms\Core\Commands\Auth\LoginCommand;
 
 class LoginCommandHandler
 {

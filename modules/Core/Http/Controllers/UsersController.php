@@ -1,4 +1,4 @@
-<?php namespace Cms\Core\Http\Controllers;
+<?php namespace Pingpong\Cms\Core\Http\Controllers;
 
 use Pingpong\Modules\Routing\Controller;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cms\Core\Commands;
+namespace Pingpong\Cms\Core\Commands;
 
 abstract class Command
 {
