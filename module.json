@@ -1,0 +1,15 @@
+{
+    "name": "Menus",
+    "alias": "menus",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Pingpong\\Cms\\Menus\\Providers\\MenusServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
