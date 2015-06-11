@@ -17,7 +17,6 @@ Route::group(['prefix' => $prefix, 'middleware' => config('cms.middleware'), 'na
 Route::group([
 	'prefix' => $prefix,
 	'middleware' => config('cms.middleware'),
-	'namespace' => 'App\Http\Controllers'
 ], function () {
    event('cms.routes', app('router'));
 });
