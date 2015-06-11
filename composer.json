@@ -27,7 +27,6 @@
 		],
 		"psr-4": {
 			"App\\": "app/",
-			"Cms\\": "modules/",
 			"Pingpong\\Cms\\": "modules/"
 		},
 		"files": [
