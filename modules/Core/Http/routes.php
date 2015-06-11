@@ -13,10 +13,3 @@ Route::group(['prefix' => $prefix, 'middleware' => config('cms.middleware'), 'na
     Route::get('/', 'CoreController@index');
     Route::get('/users', 'UsersController@index');
 });
-
-Route::group([
-	'prefix' => $prefix,
-	'middleware' => config('cms.middleware'),
-], function () {
-   event('cms.routes', app('router'));
-});

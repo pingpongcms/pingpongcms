@@ -19,6 +19,23 @@ class CoreServiceProvider extends ServiceProvider
         \View::addNamespace('core', __DIR__.'/../Resources/views');
 
         $this->registerConfig();
+
+        $this->listenRoutes();
+    }
+
+    protected function listenRoutes()
+    {
+        $this->app->booted(function ($app)
+        {
+            $router = $app['router'];
+
+            $router->group([
+                'prefix' => cms()->prefix(),
+                'middleware' => config('cms.middleware'),
+            ], function () use ($router) {
+               event('cms.routes', $router);
+            });
+        });
     }
 
     /**
