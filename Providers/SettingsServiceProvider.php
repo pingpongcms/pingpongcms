@@ -1,4 +1,4 @@
-<?php namespace Cms\Settings\Providers;
+<?php namespace Pingpong\Cms\Settings\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
