@@ -14,9 +14,9 @@ class ApiServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        \Lang::addNamespace('api', __DIR__.'/Resources/lang');
+        \Lang::addNamespace('api', __DIR__.'/../Resources/lang');
 
-        \View::addNamespace('api', __DIR__.'/Resources/views');
+        \View::addNamespace('api', __DIR__.'/../Resources/views');
     }
 
     /**
