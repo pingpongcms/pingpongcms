@@ -16,5 +16,5 @@ $menu->dropdown('Pages', function ($sub)
 
 $menu->whereTitle('Settings', function ($sub)
 {
-	$sub->url('administrator/settings/posts', 'Posts', 2);
+	$sub->url('administrator/settings/posts', 'Posts', 2, ['icon' => 'fa fa-circle-o']);
 });
