@@ -1,4 +1,4 @@
-<?php namespace Cms\Settings\Database\Seeders;
+<?php namespace Pingpong\Cms\Settings\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
@@ -12,9 +12,7 @@ class SettingsDatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		Model::unguard();
-		
-		// $this->call("OthersTableSeeder");
+		$this->call(__NAMESPACE__ . '\\SettingsTableSeeder');
 	}
 
 }
