@@ -13,6 +13,6 @@ class CoreDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $this->call(__NAMESPACE__ . '\\UserTableSeeder');
     }
 }

@@ -4,12 +4,9 @@ Menu::create('sidebar', function ($menu)
 {
 	$menu->setPresenter('Cms\Core\Presenters\Menus\SidebarPresenter');
 	$menu->setPrefixUrl(cms()->prefix());
+	$menu->enableOrdering();
 	$menu->header('MAIN NAVIGATION');
-	$menu->url('/', 'Dashboard', ['icon' => 'fa fa-dashboard']);
-	$menu->url('/users', 'Users', ['icon' => 'fa fa-users']);
-	$menu->dropdown('Settings', function ($sub)
-	{
-		$sub->url('settings', 'General');
-	}, ['icon' => 'fa fa-wrench']);
+	$menu->url('/', 'Dashboard', 1, ['icon' => 'fa fa-dashboard']);
+	$menu->url('/users', 'Users', 2, ['icon' => 'fa fa-users']);
 });
 
