@@ -12,13 +12,20 @@ class ApiServiceProvider extends ServiceProvider
      */
     protected $defer = false;
 
+    public function boot()
+    {
+        \Lang::addNamespace('api', __DIR__.'/Resources/lang');
+
+        \View::addNamespace('api', __DIR__.'/Resources/views');
+    }
+
     /**
      * Register the service provider.
      *
      * @return void
      */
     public function register()
-    {
+    {       
         $this->registerConfig();
     }
 

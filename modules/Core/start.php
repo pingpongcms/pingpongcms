@@ -12,10 +12,6 @@
 |
 */
 
-Lang::addNamespace('core', __DIR__.'/Resources/lang');
-
-View::addNamespace('core', __DIR__.'/Resources/views');
-
 require __DIR__ . '/middlewares.php';
 
 require __DIR__ . '/helpers.php';

@@ -14,6 +14,10 @@ class CoreServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        \Lang::addNamespace('core', __DIR__.'/Resources/lang');
+
+        \View::addNamespace('core', __DIR__.'/Resources/views');
+
         $this->registerConfig();
     }
 

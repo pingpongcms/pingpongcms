@@ -12,8 +12,4 @@
 |
 */
 
-Lang::addNamespace('api', __DIR__.'/Resources/lang');
-
-View::addNamespace('api', __DIR__.'/Resources/views');
-
 require __DIR__ . '/Http/routes.php';
