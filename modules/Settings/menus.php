@@ -2,4 +2,7 @@
 
 $menu = Menu::instance('sidebar');
 
-$menu->url('settings', 'Settings', 6, 'fa fa-wrench');
+$menu->dropdown('Settings', function ($sub)
+{
+	$sub->url('administrator/settings', 'General', 1, ['icon' => 'fa fa-bullet']);
+}, 6, ['icon' => 'fa fa-wrench']);
