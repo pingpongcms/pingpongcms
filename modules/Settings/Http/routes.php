@@ -13,5 +13,9 @@ Event::listen('cms.routes', function ($router)
 			'as' => 'settings.index',
 			'uses' => 'SettingsController@index'
 		]);
+		Route::post('settings', [
+			'as' => 'settings.update',
+			'uses' => 'SettingsController@update'
+		]);
 	});
 });
