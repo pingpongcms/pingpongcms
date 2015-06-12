@@ -5,9 +5,6 @@
 @section('content')
 
 <div ng-controller="UsersController">
-	
-    <!-- Main content -->
-    <section class="content">
     	<!-- Default box -->
     	<div class="box">
     		<div class="box-header with-border">
@@ -157,8 +154,7 @@
 
             </div><!-- /.box-footer-->
         </div><!-- /.box -->
-    </section>
-
+        
     {{-- Modal Add --}}
     <div class="modal fade" id="modalAdd">
         <div class="modal-dialog">

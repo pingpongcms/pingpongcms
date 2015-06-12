@@ -1,9 +1,6 @@
 @extends('core::layouts.master')
 
 @section('content')
-	
-        <!-- Main content -->
-        <section class="content">
           <!-- Info boxes -->
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
@@ -648,8 +645,6 @@
               </div><!-- /.box -->
             </div><!-- /.col -->
           </div><!-- /.row -->
-
-        </section><!-- /.content -->
 
 @stop
 

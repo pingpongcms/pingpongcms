@@ -56,7 +56,10 @@
             <li class="active">Dashboard</li>
           </ol>
         </section>
-        @yield('content')
+        <!-- Main content -->
+        <section class="content">
+          @yield('content')
+        </section>
       </div><!-- /.content-wrapper -->
 
       <footer class="main-footer">
