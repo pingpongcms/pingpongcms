@@ -25,7 +25,7 @@ class ApiServiceProvider extends ServiceProvider
      * @return void
      */
     public function register()
-    {       
+    {
         $this->registerConfig();
     }
 

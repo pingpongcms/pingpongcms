@@ -6,7 +6,7 @@ return [
     'title' => '<b>Pingpong</b> CMS',
     
     'middleware' => [
-    	'auth',
-    	'cms.auth'
+        'auth',
+        'cms.auth'
     ]
 ];

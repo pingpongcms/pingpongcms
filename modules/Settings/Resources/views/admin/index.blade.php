@@ -16,23 +16,23 @@
 	</div><!-- /.box-header -->
 	<div class="box-body">
 		<div class="form-group">
-			{!! Form::label('site_name', 'Name') !!}	
+			{!! Form::label('site_name', 'Name') !!}
 			{!! Form::text('settings[site.name]', setting('site.name'), ['class' => 'form-control', 'id' => 'site_name']) !!}
 		</div>
 		<div class="form-group">
-			{!! Form::label('site_description', 'Description') !!}	
+			{!! Form::label('site_description', 'Description') !!}
 			{!! Form::textarea('settings[site.description]', setting('site.description'), ['class' => 'form-control', 'id' => 'site_description']) !!}
 		</div>
 		<div class="form-group">
-			{!! Form::label('site_keywords', 'Keywords') !!}	
+			{!! Form::label('site_keywords', 'Keywords') !!}
 			{!! Form::text('settings[site.keywords]', setting('site.keywords'), ['class' => 'form-control', 'id' => 'site_keywords']) !!}
 		</div>
 		<div class="form-group">
-			{!! Form::label('site_author', 'Author') !!}	
+			{!! Form::label('site_author', 'Author') !!}
 			{!! Form::text('settings[site.author]', setting('site.author'), ['class' => 'form-control', 'id' => 'site_author']) !!}
 		</div>
-	</div><!-- /.box-body --> 
-	<div class="box-footer">		
+	</div><!-- /.box-body -->
+	<div class="box-footer">
 		<button class="btn btn-primary" type="submit">Save</button>
 	</div><!-- box-footer -->
 </div><!-- /.box -->

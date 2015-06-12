@@ -6,19 +6,19 @@ use Pingpong\Cms\Core\Commands\Auth\VerifyEmailAddress;
 use Pingpong\Cms\Core\Confirmation\InvalidConfirmationCodeException;
 use Pingpong\Cms\Core\Entities\User;
 
-class VerifyEmailAddressHandler {
+class VerifyEmailAddressHandler
+{
 
-	public function handle(VerifyEmailAddress $command)
-	{
-		$user = User::whereConfirmationCode($command->code)->first();
+    public function handle(VerifyEmailAddress $command)
+    {
+        $user = User::whereConfirmationCode($command->code)->first();
 
-		if (is_null($user)) {
-			throw new InvalidConfirmationCodeException("Invalid Confirmation Code.");
-		}
+        if (is_null($user)) {
+            throw new InvalidConfirmationCodeException("Invalid Confirmation Code.");
+        }
 
-		$user->confirm();
+        $user->confirm();
 
-		return $user;
-	}
-
+        return $user;
+    }
 }

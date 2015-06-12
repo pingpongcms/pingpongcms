@@ -147,7 +147,7 @@
 {{-- End of Modal Edit --}}
                             </td>
                         </tr>
-                    </tbody>       
+                    </tbody>
                 </table>
             </div><!-- /.box-body -->
             <div class="box-footer">

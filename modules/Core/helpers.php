@@ -17,8 +17,8 @@ if (! function_exists('user')) {
 }
 
 if (!function_exists('page_title')) {
-	function page_title($default = null)
-	{
-		return strip_tags(config('cms.title', $default));
-	}
+    function page_title($default = null)
+    {
+        return strip_tags(config('cms.title', $default));
+    }
 }

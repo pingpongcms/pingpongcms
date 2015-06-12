@@ -56,5 +56,4 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         $this->confirmation_code = null;
         $this->save();
     }
-    
 }

@@ -25,8 +25,7 @@ class CoreServiceProvider extends ServiceProvider
 
     protected function listenRoutes()
     {
-        $this->app->booted(function ($app)
-        {
+        $this->app->booted(function ($app) {
             $router = $app['router'];
 
             $router->group([

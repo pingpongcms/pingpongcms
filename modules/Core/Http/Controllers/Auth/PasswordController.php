@@ -47,8 +47,7 @@ class PasswordController extends Controller
      */
     public function getReset($token = null)
     {
-        if (is_null($token))
-        {
+        if (is_null($token)) {
             throw new NotFoundHttpException;
         }
 
@@ -73,8 +72,7 @@ class PasswordController extends Controller
             'email', 'password', 'password_confirmation', 'token'
         );
 
-        $response = $this->passwords->reset($credentials, function($user, $password)
-        {
+        $response = $this->passwords->reset($credentials, function ($user, $password) {
             $user->password = $password;
 
             $user->save();
@@ -82,8 +80,7 @@ class PasswordController extends Controller
             $this->auth->login($user);
         });
 
-        switch ($response)
-        {
+        switch ($response) {
             case PasswordBroker::PASSWORD_RESET:
                 return redirect($this->redirectPath());
 
@@ -93,5 +90,4 @@ class PasswordController extends Controller
                             ->withErrors(['email' => trans($response)]);
         }
     }
-
 }

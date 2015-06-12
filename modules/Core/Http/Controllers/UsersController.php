@@ -7,5 +7,5 @@ class UsersController extends Controller
     public function index()
     {
         return view('core::users.index');
-    }   
+    }
 }

@@ -2,13 +2,13 @@
 
 namespace Pingpong\Cms\Core\Events;
 
-class UserWasRegistered {
+class UserWasRegistered
+{
 
-	public $user;
+    public $user;
 
-	public function __construct($user)
-	{
-		$this->user = $user;
-	}
-
+    public function __construct($user)
+    {
+        $this->user = $user;
+    }
 }

@@ -2,4 +2,6 @@
 
 namespace Pingpong\Cms\Core\Confirmation;
 
-class InvalidConfirmationCodeException extends \Exception {}
+class InvalidConfirmationCodeException extends \Exception
+{
+}
