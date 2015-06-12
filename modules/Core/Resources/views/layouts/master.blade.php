@@ -37,6 +37,7 @@
       
       window.Cms = new AngularBooter('Cms'); // <-- Pass in what you want to call your ng-app.
     </script>
+    @yield('style')
   </head>
   <body ng-app="Cms" class="skin-blue">
     <div class="wrapper">
