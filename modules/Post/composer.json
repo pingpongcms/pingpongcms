@@ -1,6 +1,7 @@
 {
 	"name": "pingpongcms/post",
 	"description": "",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Pingpong Labs",
