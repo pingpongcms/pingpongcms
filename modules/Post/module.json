@@ -6,7 +6,8 @@
     "active": 1,
     "order": 4,
     "providers": [
-        "Pingpong\\Cms\\Post\\Providers\\PostServiceProvider"
+        "Pingpong\\Cms\\Post\\Providers\\PostServiceProvider",
+        "Pingpong\\Cms\\Post\\Providers\\RepositoriesServiceProvider"
     ],
     "aliases":{},
     "files": [
