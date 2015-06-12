@@ -11,6 +11,7 @@
     "aliases":{},
     "files": [
         "start.php",
+        "helpers.php",
         "menus.php"
     ]
 }
