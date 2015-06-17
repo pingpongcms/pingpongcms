@@ -22,7 +22,11 @@ class Post extends Model {
 
     const PUBLISHED_AT = 'published_at';
 
-    public static $path = 'images/posts/'; 
+    public static $path = 'images/posts/';
+
+    protected $appends = [
+        'author'
+    ]; 
 
     public function user()
     {
@@ -40,6 +44,11 @@ class Post extends Model {
         } else {
             $this->attributes['image'] = $value;
         }
+    }
+
+    public function getAuthorAttribute()
+    {
+        return $this->user ? $this->user->name : 'Unknown';
     }
 
 }
