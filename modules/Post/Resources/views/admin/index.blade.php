@@ -26,7 +26,7 @@
 			</thead>
 			@foreach ($posts as $post)
 				<tr>
-					<td>{{ $no }}</td>
+					<td class="text-center">{{ $no }}</td>
 					<td>{{ $post->title }}</td>
 					<td>{{ $post->author }}</td>
 					<td>{{ $post->created_at }}</td>
@@ -38,6 +38,7 @@
 						</div>
 					</td>
 				</tr>
+				<?php $no++; ?>
 			@endforeach
 		</table>
 		<div class="box-footer">
