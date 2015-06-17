@@ -33,7 +33,7 @@
 					<td class="text-center">
 						<div class="btn-group">
 							<a class="btn btn-default" href="#!"><i class="fa fa-eye"></i></a>
-							<a class="btn btn-default" href="#!"><i class="fa fa-edit"></i></a>
+							<a class="btn btn-default" href="{{ cms()->route('posts.edit', [$post->id]) }}"><i class="fa fa-edit"></i></a>
 							<a class="btn btn-default" href="#!"><i class="fa fa-times"></i></a>
 						</div>
 					</td>
