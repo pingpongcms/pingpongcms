@@ -22,6 +22,7 @@
 				<th>Title</th>
 				<th>Author</th>
 				<th>Created At</th>
+				<th class="text-center">Action</th>
 			</thead>
 			@foreach ($posts as $post)
 				<tr>
@@ -29,6 +30,13 @@
 					<td>{{ $post->title }}</td>
 					<td>{{ $post->author }}</td>
 					<td>{{ $post->created_at }}</td>
+					<td class="text-center">
+						<div class="btn-group">
+							<a class="btn btn-default" href="#!"><i class="fa fa-eye"></i></a>
+							<a class="btn btn-default" href="#!"><i class="fa fa-edit"></i></a>
+							<a class="btn btn-default" href="#!"><i class="fa fa-times"></i></a>
+						</div>
+					</td>
 				</tr>
 			@endforeach
 		</table>
