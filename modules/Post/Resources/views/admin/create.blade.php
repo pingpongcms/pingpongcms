@@ -31,6 +31,25 @@
 		<div class="col-md-4">
 			<div class="box">
 				<div class="box-header with-border">
+					<h3 class="box-title">Featured Image</h3>
+					<div class="box-tools pull-right"></div>
+				</div>
+				<div class="box-body">
+					<div class="fileinput fileinput-new" data-provides="fileinput">
+					  <div class="fileinput-new thumbnail" style="width: 325px; height: 225px;">
+					  </div>
+					  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 350px; max-height: 350px;"></div>
+					  <div>
+					    <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span>
+						{!! Form::file('image') !!}
+					    </span>
+					    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="box-header with-border">
 					<h3 class="box-title">Publishing</h3>
 					<div class="box-tools pull-right"></div>
 				</div>
@@ -46,23 +65,6 @@
 					<button class="btn btn-primary btn-block" type="submit">
 						Publish
 					</button>
-				</div>
-			</div>
-			<div class="box">
-				<div class="box-header with-border">
-					<h3 class="box-title">Featured Image</h3>
-					<div class="box-tools pull-right"></div>
-				</div>
-				<div class="box-body">
-					<div class="fileinput fileinput-new" data-provides="fileinput">
-					  <div class="fileinput-new thumbnail" style="width: 325px; height: 225px;">
-					  </div>
-					  <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 350px; max-height: 350px;"></div>
-					  <div>
-					    <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
-					    <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-					  </div>
-					</div>
 				</div>
 			</div>
 		</div>
