@@ -43,5 +43,12 @@ class PostsController extends Controller {
 
 		return cms()->redirect('posts');
 	}
+
+	public function edit($id)
+	{
+		$post = $this->repository->find($id);
+
+		return view('post::admin.edit', compact('post', 'id'));
+	}
 	
 }
