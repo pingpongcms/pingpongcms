@@ -21,9 +21,24 @@ class Post extends Model {
 
     const PUBLISHED_AT = 'published_at';
 
+    public static $path = 'images/posts/'; 
+
     public function user()
     {
     	return $this->belongsTo(User::class);
+    }
+
+    public function setImageAttribute($value)
+    {
+        if ($value instanceof UploadedFile) {
+            $this->attributes['image'] = upload_image(
+                $value,
+                static::$path,
+                'post.uploaded'
+            );
+        } else {
+            $this->attributes['image'] = $value;
+        }
     }
 
 }
