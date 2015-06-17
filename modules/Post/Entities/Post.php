@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use Pingpong\Cms\Core\Entities\User;
 use Pingpong\Support\Traits\Imageable;
 use Pingpong\Support\Traits\Publishable;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class Post extends Model {
 
