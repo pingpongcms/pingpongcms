@@ -27,7 +27,7 @@
 				<tr>
 					<td>{{ $no }}</td>
 					<td>{{ $post->title }}</td>
-					<td>{{ $post->user->name }}</td>
+					<td>{{ $post->author }}</td>
 					<td>{{ $post->created_at }}</td>
 				</tr>
 			@endforeach
