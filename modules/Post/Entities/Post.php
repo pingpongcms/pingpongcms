@@ -25,7 +25,8 @@ class Post extends Model {
     public static $path = 'images/posts/';
 
     protected $appends = [
-        'author'
+        'author',
+        'save_as_draft'
     ]; 
 
     public function user()
@@ -49,6 +50,11 @@ class Post extends Model {
     public function getAuthorAttribute()
     {
         return $this->user ? $this->user->name : 'Unknown';
+    }
+
+    public function getSaveAsDraftAttribute()
+    {
+        return $this->drafted() ? true : false;
     }
 
 }
