@@ -5,8 +5,20 @@ $namespace = 'Pingpong\Cms\Core\Http\Controllers';
 $prefix = cms()->prefix();
 
 Route::group(['namespace' => $namespace . '\Auth'], function () {
-    Route::controller('auth', 'AuthController');
-    Route::controller('password', 'PasswordController');
+    Route::controller('auth', 'AuthController', [
+    	'getLogin' => 'login.index',
+    	'postLogin' => 'login.store',
+    	'getRegister' => 'register.index',
+    	'postRegister' => 'register.store',
+    	'getLogout' => 'logout',
+    	'getConfirmation' => 'user.confirmation'
+    ]);
+    Route::controller('password', 'PasswordController', [
+    	'getEmail' => 'password.email.index',
+    	'postEmail' => 'password.email.store',
+    	'getReset' => 'password.reset.index',
+    	'postReset' => 'password.reset.store'
+    ]);
 });
 
 Route::group(['prefix' => $prefix, 'middleware' => config('cms.middleware'), 'namespace' => $namespace], function () {
