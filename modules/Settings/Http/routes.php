@@ -7,11 +7,11 @@ Route::group(['prefix' => 'settings', 'namespace' => 'Pingpong\Cms\Settings\Http
 backend_routes(function ($router) {
     $router->group(['namespace' => 'Pingpong\Cms\Settings\Http\Controllers\Admin'], function () {
         Route::get('settings', [
-            'as' => 'settings.index',
+            'as' => 'admin.settings.index',
             'uses' => 'SettingsController@index'
         ]);
         Route::post('settings', [
-            'as' => 'settings.update',
+            'as' => 'admin.settings.update',
             'uses' => 'SettingsController@update'
         ]);
     });
