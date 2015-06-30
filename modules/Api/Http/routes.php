@@ -7,6 +7,7 @@ Route::group(['prefix' => 'api', 'namespace' => 'Pingpong\Cms\Api\Http\Controlle
     		'store' => 'api.users.store',
     		'update' => 'api.users.update',
     		'destroy' => 'api.users.destroy',
-    	]
+    	],
+    	'only' => ['index', 'store', 'update', 'show', 'destroy']
     ]);
 });
