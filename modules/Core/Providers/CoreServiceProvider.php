@@ -32,7 +32,7 @@ class CoreServiceProvider extends ServiceProvider
                 'prefix' => cms()->prefix(),
                 'middleware' => config('cms.middleware'),
             ], function () use ($router) {
-               event('cms.routes', $router);
+               event('backend.routes', $router);
             });
         });
     }

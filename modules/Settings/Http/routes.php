@@ -4,7 +4,7 @@ Route::group(['prefix' => 'settings', 'namespace' => 'Pingpong\Cms\Settings\Http
     Route::get('/', 'SettingsController@index');
 });
 
-Event::listen('cms.routes', function ($router) {
+Event::listen('backend.routes', function ($router) {
     $router->group(['namespace' => 'Pingpong\Cms\Settings\Http\Controllers\Admin'], function () {
         Route::get('settings', [
             'as' => 'settings.index',

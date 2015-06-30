@@ -4,7 +4,7 @@ Route::group(['prefix' => 'post', 'namespace' => 'Pingpong\\Cms\Post\Http\Contro
     Route::get('/', 'PostController@index');
 });
 
-Event::listen('cms.routes', function ($router) {
+Event::listen('backend.routes', function ($router) {
     $router->group(['namespace' => 'Pingpong\Cms\Post\Http\Controllers\Admin'], function () {
         Route::resource('posts', 'PostsController');
     });
