@@ -22,3 +22,10 @@ if (!function_exists('page_title')) {
         return strip_tags(config('cms.title', $default));
     }
 }
+
+if (!function_exists('backend_routes')) {
+    function backend_routes(\Closure $callback)
+    {
+        Event::listen('backend.routes', $callback);
+    }
+}
