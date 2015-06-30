@@ -14,7 +14,7 @@ class Cms implements CmsContract
 
     public function redirect($to, $status = 302, $headers = array(), $secure = null)
     {
-        return app('redirect')->to($this->prefix($to), $status, $headers, $secure);
+        return redirect()->to($this->prefix($to), $status, $headers, $secure);
     }
 
     public function route($name, $parameters = array(), $absolute = true, $route = null)
