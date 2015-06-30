@@ -21,11 +21,11 @@ Route::group(['namespace' => $namespace . '\Auth'], function () {
 
 Route::group(['prefix' => cms()->prefix(), 'middleware' => config('cms.middleware'), 'namespace' => $namespace], function () {
     Route::get('/', [
-    	'as' => 'admin.index',
-    	'uses' => 'CoreController@index'
+        'as' => 'admin.index',
+        'uses' => 'CoreController@index'
     ]);
     Route::get('/users', [
-    	'as' => 'admin.users.index',
-    	'uses' => 'UsersController@index'
+        'as' => 'admin.users.index',
+        'uses' => 'UsersController@index'
     ]);
 });
