@@ -47,3 +47,8 @@ if (file_exists($skyPath))
 {
 	require $skyPath;
 }
+
+
+if (is_dir($modulesPath = realpath(__DIR__ .'/../modules'))) {
+	Pingpong\Modules\Starter::start($modulesPath);
+}
