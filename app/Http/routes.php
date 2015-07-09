@@ -12,14 +12,3 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-
-Route::resource('posts', 'PostsController', ['only' => ['index', 'show']]);
-Route::get('posts/{year}/{month}', [
-    'as' => 'posts.archive',
-    'uses' => 'PostsController@archive'
-]);
-
-Route::get('post/{slug}', [
-    'as' => 'post',
-    'uses' => 'PostsController@show'
-]);
