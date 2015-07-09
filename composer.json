@@ -27,10 +27,7 @@
 		"psr-4": {
 			"App\\": "app/",
 			"Pingpong\\Cms\\": "modules/"
-		},
-		"files": [
-			"app/Support/helpers.php"
-		]
+		}
 	},
 	"autoload-dev": {
 		"classmap": [
