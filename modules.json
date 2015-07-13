@@ -1,29 +1,29 @@
 {
-	"require": [
-		{
-			"name": "pingpongcms/api",
-			"type": "github",
-			"version": "master"
-		},
-		{
-			"name": "pingpongcms/core",
-			"type": "github",
-			"version": "master"
-		},
-		{
-			"name": "pingpongcms/settings",
-			"type": "github",
-			"version": "master"
-		},
-		{
-			"name": "pingpongcms/post",
-			"type": "github",
-			"version": "master"
-		},
-		{
-			"name": "pingpongcms/menus",
-			"type": "github",
-			"version": "master"
-		}
-	]
+    "require": [
+        {
+            "name": "pingpongcms/api",
+            "type": "github",
+            "version": "master"
+        },
+        {
+            "name": "pingpongcms/core",
+            "type": "github",
+            "version": "master"
+        },
+        {
+            "name": "pingpongcms/settings",
+            "type": "github",
+            "version": "master"
+        },
+        {
+            "name": "pingpongcms/post",
+            "type": "github",
+            "version": "master"
+        },
+        {
+            "name": "pingpongcms/menus",
+            "type": "github",
+            "version": "master"
+        }
+    ]
 }
