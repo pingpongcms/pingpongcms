@@ -17,11 +17,11 @@ A modern CMS based on Laravel PHP Framework.
 composer create-project pingpongcms/pingpongcms --stability=dev
 ```
 
-After the installation completed. You need to install the asset components. You can install the components using bower.
+After the installation completed. You need to install the required modules.
 
 ```
 cd /path/to/cms
-bower install
+php artisan module:install --no-update
 ```
 
 ## Demo
