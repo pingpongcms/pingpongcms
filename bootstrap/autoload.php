@@ -34,18 +34,19 @@ if (file_exists($compiledPath))
 	require $compiledPath;
 }
 
-
-/**
- * Pingpong Sky Workbench.
- * 
- * @var string
- */
-
-$skyPath = __DIR__.'/../workbench/pingpong/sky/vendor/autoload.php';
-
-if (file_exists($skyPath))
+/*
+|--------------------------------------------------------------------------
+| Register The Workbench Loaders
+|--------------------------------------------------------------------------
+|
+| The Laravel workbench provides a convenient place to develop packages
+| when working locally. However we will need to load in the Composer
+| auto-load files for the packages so that these can be used here.
+|
+*/
+if (is_dir($workbench = __DIR__.'/../workbench'))
 {
-	require $skyPath;
+    Pingpong\Workbench\Starter::start($workbench);
 }
 
 

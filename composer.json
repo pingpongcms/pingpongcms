@@ -9,6 +9,7 @@
 		"laravelcollective/html": "~5",
 	    "doctrine/dbal": "~2.5",
 	    "pingpong/sky": "2.1.*",
+	    "pingpong/workbench": "5.1.*",
 		"intervention/image": "~2.1",
 		"barryvdh/laravel-debugbar": "~2.0",
 	    "laravelcollective/annotations": "~5.0",
